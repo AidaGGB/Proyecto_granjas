@@ -1,0 +1,16 @@
+
+@font-face{
+	font-family:"chewy"; 
+	src:url("../fonts/Chewy.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.containere{
+    background-color: white;
+}
+
+.error{
+    text-align: center;
+    margin-top: 20px;
+}
