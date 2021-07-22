@@ -15,28 +15,7 @@ function App() {
     <div>
       
      <Router basename={process.env.PUBLIC_URL}>
-        <Switch>
-            <Route path='/formulario'sensitive>
-              <Formulario/>
-            </Route>
-
-            <Route path='/nineras'sensitive>
-              <Nineras/>
-            </Route>
-
-            <Route exact path='/'>
-              <Home/>
-            </Route>
-
-            <Route exact path='/home'>
-              <Home/>
-            </Route>
-
-            <Route path='*'>
-              <Error/>
-            </Route>
-
-          </Switch>
+       
       </Router>
       
     </div>

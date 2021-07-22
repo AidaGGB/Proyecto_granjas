@@ -2,3 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 
+.header{
+    width: 100%;
+    min-height: 130px;
+    background-color: #CB262A;
+    padding: 10px;
+}
+
+.boton{
+    margin: auto;
+}
+
+.regran{
+    max-width: 165px;
+    width: 100%;
+    background-color: white;
+    color:#CB262A;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
