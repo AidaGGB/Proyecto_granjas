@@ -4,11 +4,17 @@ import './index.css';
 import App from './App';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import Header2 from './components/header2/Header2';
+import Pprincipal from './components/pprincipal/Pprincipal';
+import Login from './components/login/Login';
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
       <Header/>
+      <Header2/>
+      <Pprincipal/>
+      <Login/>
       <Footer/>
         
     </div>

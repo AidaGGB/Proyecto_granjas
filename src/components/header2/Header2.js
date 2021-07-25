@@ -1,4 +1,4 @@
-import './Header.css';
+import './Header2.css';
 import logo from './Logo.png';
 import React from "react";
 import {
@@ -10,17 +10,18 @@ import {
 } from "react-router-dom";
 
 
-function Header () {
+function Header2 () {
     return (
       <div>
         <div className="container-fluid overflow-hidden header">
 		      <div className="row">
-            <div className=" col-sm-6 col-md-6 col-lg-10" >
+            <div className=" col-sm-6 col-md-6 col-lg-8" >
               <img src={logo} className="image-fluid"/>
             </div>
 
-            <div className="boton col-sm-6 col-md-6 col-lg-2">
-              <button type="button" className="regran"> Sistema REGRAN </button>
+            <div className="boton col-sm-6 col-md-6 col-lg-4">
+              <button type="button" className="regran"><i className="fas fa-power-off"></i> Cerrar Sesiòn </button>
+              <button type="button" className="regresar"><i className="fas fa-chevron-circle-left"></i> Regresar </button>
             </div>
 			    </div>    
         </div>
@@ -28,4 +29,4 @@ function Header () {
     );
   }
   
-  export default Header;
+  export default Header2;

@@ -1,0 +1,32 @@
+.titulo{
+    color: #CB262A;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bolder;
+    text-shadow: 2px 0px 2px black;
+    font-family: 'Poppins', sans-serif;
+}
+.card{
+	max-width: 27rem;
+	width: 100%;
+	min-height: 23rem;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px black;
+}
+.cajas{
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.card-text{
+	text-align: justify;
+	margin: auto;
+	font-family: 'Poppins', sans-serif;
+	color: black;
+	font-weight: 500;
+}
+.imgindex{
+	background-image: url(./index.png);
+	background-size: cover;
+	background-position: center center;
+}

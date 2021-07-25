@@ -1,11 +1,14 @@
-.footer{
+
+.footer2{
     width: 100%;
-    min-height: 170px;
+    min-height: 150px;
     background-color:  #CB262A;
-    padding: 10px;
+    padding: 20px;
 }
 
 .sec2{
+    max-width: 280px;
+    width: 100%;
     color: white;
     font-size: 12px;
     line-height: 10px;
@@ -20,9 +23,10 @@
 .certifica{
     max-width: 180px;
     width: 100%;
-    float:right;
-    
-}
+    float: right;
+
+ 
+}   
 
 .certifica img{
     max-width: 70px;
@@ -31,3 +35,20 @@
 .iso{
     width: 30px;
 }
+.sec3{
+    color: white;
+    font-size: 12px;
+    text-align: right;
+}
+.iconos{
+    float: right;
+    min-height: 50px;
+    color: white;
+    margin-top: 50px; 
+    align-content:  flex-end;
+}
+.iconos i{
+    font-size: 30px;
+    padding: 12px; 
+}
+
