@@ -1,5 +1,6 @@
 import './Header2.css';
 import logo from './Logo.png';
+import Menu from '../menu/Menu';
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -15,7 +16,9 @@ function Header2 () {
       <div>
         <div className="container-fluid overflow-hidden header">
 		      <div className="row">
-            <div className=" col-sm-6 col-md-6 col-lg-8" >
+        
+            <div className="menu col-sm-6 col-md-6 col-lg-8" >
+              <Menu/>
               <img src={logo} className="image-fluid"/>
             </div>
 

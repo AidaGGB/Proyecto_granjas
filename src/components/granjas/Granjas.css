@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
+.granjas h1{
+    color:#CB262A;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.granjas i{
+    font-size: 30px;
+}
+
+.btn-granja{
+    width: 130px;
+    height: 45px;
+    background-color: #CB262A;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.form-control{
+   border-radius: 20px;
+   border: 1px solid #CB262A;
+   margin-top: 10px;
+   box-shadow: 0px 2px 3px black;
+}
+
+.input-group-text{
+    border-radius: 20px;
+    border: 1px solid #CB262A;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 0px 2px 3px black;
+}
+
+.input-group-text i{
+    color: #CB262A;
+}
+
+.card{
+    width: 18rem;
+}
+
+
+
+    

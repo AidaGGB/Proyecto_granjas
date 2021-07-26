@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+
+.btn-secondary{
+   background-color: #CB262A;
+   box-shadow: 2px 2px 3px black;
+   margin-top: 20px;
+    
+}
+
+.btn-secondary div.barry {
+    margin-top: 15px;
+    width: 40px;
+    height: 45px;
+    
+  }
+  .btn-secondary div.barry .bar {
+    display: block;
+    width: 100%;
+    height: 5px;
+    margin-top: 3px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+
+
+ .btn-secondary:hover {
+    color: #fff;
+    background-color: #CB262A;
+    border-color: #CB262A;
+}
+
+.btn-check:focus+.btn-secondary, .btn-secondary:focus {
+    color: #fff;
+    background-color: #004296;
+    border-color: #004296;
+    box-shadow: 0 0 0 0.25rem rgb(130 138 145 / 50%);
+}
+
+.dropdown li{
+    border-bottom:1px solid #CB262A;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+ 
+

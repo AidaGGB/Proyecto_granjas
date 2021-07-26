@@ -7,14 +7,16 @@ import Footer from './components/footer/Footer';
 import Header2 from './components/header2/Header2';
 import Pprincipal from './components/pprincipal/Pprincipal';
 import Login from './components/login/Login';
+import Menu from './components/menu/Menu';
+import Inicio from './components/inicio/Inicio';
+import Granjas from './components/granjas/Granjas';
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
-      <Header/>
+    
       <Header2/>
-      <Pprincipal/>
-      <Login/>
+      <Granjas/>
       <Footer/>
         
     </div>

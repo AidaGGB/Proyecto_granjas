@@ -42,3 +42,11 @@
 .boton i{
    font-size: 20px;
 }
+
+.menu{
+   display: flex;
+  }
+
+.menu img{
+    padding-left: 15px;
+}
