@@ -10,6 +10,8 @@ import Login from './components/login/Login';
 import Menu from './components/menu/Menu';
 import Inicio from './components/inicio/Inicio';
 import Granjas from './components/granjas/Granjas';
+import Registro from './components/registro/Registro';
+import Mgranjas from './components/granjas/Mgranjas';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,6 +19,7 @@ ReactDOM.render(
     
       <Header2/>
       <Granjas/>
+      <Registro/>
       <Footer/>
         
     </div>

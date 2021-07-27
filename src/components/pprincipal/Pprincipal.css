@@ -6,12 +6,12 @@
     text-shadow: 2px 0px 2px black;
     font-family: 'Poppins', sans-serif;
 }
-.card{
+.card1{
 	max-width: 27rem;
 	width: 100%;
 	min-height: 23rem;
-	border-radius: 10px;
-	box-shadow: 3px 3px 5px black;
+	box-shadow: 0px 2px 3px black;
+	
 }
 .cajas{
 	justify-content: center;
@@ -26,7 +26,11 @@
 	font-weight: 500;
 }
 .imgindex{
-	background-image: url(./index.png);
+	background-image: url(./indexma.png);
 	background-size: cover;
 	background-position: center center;
+	box-shadow: 2px 2px 3px black;
+	max-width: 27rem;
+	width: 100%;
+	min-height: 23rem;
 }

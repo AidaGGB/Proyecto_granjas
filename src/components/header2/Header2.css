@@ -10,7 +10,7 @@
     margin: auto;
 }
 
-.regran{
+.regran2{
     max-width: 165px;
     width: 100%;
     background-color: white;
@@ -21,9 +21,13 @@
     border-top-left-radius: 20px;
     border: none;
     box-shadow: 3px 3px 5px black;
-    margin-left: 60px;
+    margin-left:60px;
     font-family: 'Poppins', sans-serif;
+}
 
+.regran2:hover{
+    background-color: #CB262A;
+    color:white;
 }
 .regresar{
     max-width: 165px;
@@ -39,6 +43,12 @@
     border-left: 1px solid #CB262A; 
     font-family: 'Poppins', sans-serif;
 }
+
+.regresar:hover{
+    background-color: #CB262A;
+    color:white;
+}
+
 .boton i{
    font-size: 20px;
 }

@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
-
+.granjas{
+    padding: 25px;
+}
 .granjas h1{
     color:#CB262A;
     font-weight: 500;
@@ -21,11 +23,19 @@
     margin: 10px;
 }
 
+.btn-granja:hover{
+    background-color: white;
+    color: #CB262A;
+    border: 2px solid #CB262A;
+}
+
 .form-control{
    border-radius: 20px;
    border: 1px solid #CB262A;
    margin-top: 10px;
    box-shadow: 0px 2px 3px black;
+   font-size: 15px;
+   
 }
 
 .input-group-text{
@@ -40,10 +50,153 @@
     color: #CB262A;
 }
 
-.card{
+.card2{
     width: 18rem;
+    height: 237px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 1px 3px #5c5749;
+    border-radius: 5px;
+    background-image: url(./fondocards.jpeg);
+   
 }
 
+.siguiente{
+    color:#004296;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
 
+.infogranjas{
+    text-align: center;
+}
+.infogranjas img{
+    width: 60px;
+    border-radius: 100%;
+}
 
-    
+.infogranjas h6{
+    color:#CB262A;
+    font-weight: bold;
+}
+
+.infogranjas h7{
+    color: #004296;
+    font-weight: bold;
+}
+
+span{
+    font-weight: bold;
+}
+
+.infogranjas p{
+    font-size: 11px;
+}
+
+.botoncard{
+    margin-top: 7px;
+}
+
+.btn-primary{
+    width: 95px;
+    height: 25px;
+    font-size: 12px;
+    background-color: #004296;
+    border:none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: none;
+    border-bottom-right-radius: none;
+    line-height: 10px;
+}
+
+.btn-primary:hover{
+    background-color: white;
+    color:#004296;
+    font-weight: bolder;
+    border: 2px solid #004296;
+}
+
+.btn-eliminar{
+    width: 95px;
+    height: 25px;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #3BC37B;
+    padding: 6px 12px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    line-height: 10px;
+}
+
+.btn-eliminar:hover{
+    background-color: white;
+    color:#3BC37B;
+    font-weight: bolder;
+    border: 2px solid #3BC37B;
+}
+
+.modal-content{
+    background-image: url(./meliminacion.jpeg);
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+
+}
+
+.modal-header{
+    border:none;
+}
+
+.modal-footer{
+    border:none;
+    justify-content: center;
+}
+
+.modal-body h4{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bold;
+}
+
+.btn-m{
+    background-color: #004296;
+	color: white;
+	width: 170px;
+    padding: 5px;
+    margin-top:20px;
+    border-radius: 20px;
+	border: none;
+	box-shadow: 0px 2px 2px #5c5749;
+	font-weight: 500; 
+    margin-right: 15px;
+}
+
+.btn-m:hover{
+    background-color: white;
+	color:#004296;
+    border: 2px solid #004296;
+    font-weight: bold;
+}
+
+.btn-m2{
+    background-color: white;
+	color:#CB262A;
+	width: 170px;
+    padding: 5px;
+    margin-top:20px;
+    border-radius: 20px;
+	border: none;
+	box-shadow: 0px 2px 2px #5c5749;
+	font-weight: 500;  
+}
+
+.btn-m2:hover{
+    background-color:#CB262A;
+	color: white;
+    font-weight: bold;
+}

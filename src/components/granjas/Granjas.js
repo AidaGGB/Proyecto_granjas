@@ -1,5 +1,7 @@
 import './Granjas.css';
 import granjasimg from './granjasimg.png';
+import perfil from './granjaperfil.jpeg';
+import Mgranjas from './Mgranjas';
 
 
 
@@ -28,58 +30,106 @@ function Granjas () {
             <div className="col-sm-12 col-md-12 col-lg-8">
               <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-4">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div className="card2">
+                    <div className="card-body infogranjas">
+                      <img src={perfil}/>
+                      <h6 className="card-title">Dulcinea</h6>
+                      <h7>Datos</h7>
+                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p class="card-text"><span>Ciudad:</span> Cota</p>
+                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <div className="botoncard">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
+                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Special title treatment</h5>
-                      <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div className="card2">
+                    <div className="card-body infogranjas">
+                      <img src={perfil}/>
+                      <h6 className="card-title">Dulcinea</h6>
+                      <h7>Datos</h7>
+                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p class="card-text"><span>Ciudad:</span> Cota</p>
+                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <div className="botoncard">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
+                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div className="card2">
+                    <div className="card-body infogranjas">
+                      <img src={perfil}/>
+                      <h6 className="card-title">Dulcinea</h6>
+                      <h7>Datos</h7>
+                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p class="card-text"><span>Ciudad:</span> Cota</p>
+                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <div className="botoncard">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
+                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>   
               <div className="row">
                 <div className="col-sm-12 col-md-12 col-lg-4">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div className="card2">
+                    <div className="card-body infogranjas">
+                      <img src={perfil}/>
+                      <h6 className="card-title">Dulcinea</h6>
+                      <h7>Datos</h7>
+                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p class="card-text"><span>Ciudad:</span> Cota</p>
+                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <div className="botoncard">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
+                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div className="card2">
+                    <div className="card-body infogranjas">
+                      <img src={perfil}/>
+                      <h6 className="card-title">Dulcinea</h6>
+                      <h7>Datos</h7>
+                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p class="card-text"><span>Ciudad:</span> Cota</p>
+                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <div className="botoncard">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
+                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-sm-12 col-md-12 col-lg-4">
-                  <div className="card">
-                    <div className="card-body">
-                      <h5 className="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div className="card2">
+                    <div className="card-body infogranjas">
+                      <img src={perfil}/>
+                      <h6 className="card-title">Dulcinea</h6>
+                      <h7>Datos</h7>
+                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p class="card-text"><span>Ciudad:</span> Cota</p>
+                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <div className="botoncard">
+                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
+                        <a href="#" class="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -91,7 +141,8 @@ function Granjas () {
               <img src={granjasimg}/>
             </div>
           </div> 
-
+            <h3 className="siguiente">Siguiente  <i class="fas fa-arrow-right"></i></h3>
+          <Mgranjas/>
         </div>
           
       

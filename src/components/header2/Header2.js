@@ -17,13 +17,13 @@ function Header2 () {
         <div className="container-fluid overflow-hidden header">
 		      <div className="row">
         
-            <div className="menu col-sm-6 col-md-6 col-lg-8" >
+            <div className="menu col-sm-12 col-md-12 col-lg-8" >
               <Menu/>
               <img src={logo} className="image-fluid"/>
             </div>
 
-            <div className="boton col-sm-6 col-md-6 col-lg-4">
-              <button type="button" className="regran"><i className="fas fa-power-off"></i> Cerrar Sesiòn </button>
+            <div className="boton col-sm-12 col-md-12 col-lg-4">
+              <button type="button" className="regran2"><i className="fas fa-power-off"></i> Cerrar Sesión </button>
               <button type="button" className="regresar"><i className="fas fa-chevron-circle-left"></i> Regresar </button>
             </div>
 			    </div>    

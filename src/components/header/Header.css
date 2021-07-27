@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 .header{
-    
     min-height: 130px;
     background-color: #CB262A;
     padding: 10px;
 }
 
 .boton{
-    margin: auto;
+   margin: auto;
 }
 
 .regran{
@@ -17,10 +16,15 @@
     background-color: white;
     color:#CB262A;
     font-weight: bold;
-    padding: 10px;
+    margin-right: 10px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     border: none;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 2px 2px 3px black;
+}
 
+.regran:hover{
+    background-color: #CB262A;
+    color:white;
+   
 }
