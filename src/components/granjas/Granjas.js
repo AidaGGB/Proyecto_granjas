@@ -1,7 +1,13 @@
 import './Granjas.css';
 import perfil from './granjaperfil.jpeg';
 import Mgranjas from './Mgranjas';
-
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 
@@ -20,14 +26,14 @@ function Granjas () {
                     </div>
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-2" >
-                    <button type="button" className="btn-granja"><i className="fas fa-folder-plus"></i>  Registro </button>
+                    <Link to="/registro"><button type="button" className="btn-granja"><i className="fas fa-folder-plus"></i>  Registro </button></Link>
                   </div>
           </div>
 
           
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-8">
-              <div className="row">
+              <div className="row cajasg">
                 <div className="col-sm-12 col-md-12 col-lg-4">
                   <div className="card2">
                     <div className="card-body infogranjas">
@@ -39,7 +45,7 @@ function Granjas () {
                       <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <Link to="/modificar" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</Link>
                         <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
@@ -56,7 +62,7 @@ function Granjas () {
                       <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <Link to="/modificar" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</Link>
                         <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
@@ -73,7 +79,7 @@ function Granjas () {
                       <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <Link to="/modificar" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</Link>
                         <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
@@ -92,7 +98,7 @@ function Granjas () {
                       <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <Link to="/modificar" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</Link>
                         <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
@@ -109,7 +115,7 @@ function Granjas () {
                       <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <Link to="/modificar" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</Link>
                         <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
@@ -126,7 +132,7 @@ function Granjas () {
                       <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <Link to="/modificar" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</Link>
                         <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
@@ -140,7 +146,7 @@ function Granjas () {
               
             </div>
           </div> 
-            <h3 className="siguiente">Siguiente  <i className="fas fa-arrow-right"></i></h3>
+            
           <Mgranjas/>
         </div>
           

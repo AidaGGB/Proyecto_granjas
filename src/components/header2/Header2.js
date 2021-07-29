@@ -23,8 +23,8 @@ function Header2 () {
             </div>
 
             <div className="boton col-sm-12 col-md-12 col-lg-4">
-              <button type="button" className="regran2"><i className="fas fa-power-off"></i> Cerrar Sesión </button>
-              <button type="button" className="regresar"><i className="fas fa-chevron-circle-left"></i> Regresar </button>
+              <Link to="/"><button type="button" className="regran2"><i className="fas fa-power-off"></i> Cerrar Sesión </button></Link>
+              <button onClick={()=> window.history.back()}  type="button" className="regresar"><i className="fas fa-chevron-circle-left"></i> Regresar </button>
             </div>
 			    </div>    
         </div>

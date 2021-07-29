@@ -1,12 +1,13 @@
-import Header from '../../components/header/Header';
-
-
+import Header2 from '../../components/header2/Header2';
+import Registro from '../../components/registro/Registro';
+import Footer from '../../components/footer/Footer';
 
 function Pregistro () {
     return (
       <div>
-        <Header />
-              
+        <Header2 />
+        <Registro />
+        <Footer />       
       </div>
     );
   }

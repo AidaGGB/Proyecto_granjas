@@ -1,16 +1,15 @@
 import Header2 from '../../components/header2/Header2';
-import Granjas from '../../components/granjas/Granjas';
+import Inicio from '../../components/inicio/Inicio';
 import Footer from '../../components/footer/Footer';
 
-
-function Pgranjas () {
+function Index () {
     return (
       <div>
         <Header2 />
-        <Granjas />
-        <Footer />     
+        <Inicio />
+        <Footer />
       </div>
     );
   }
   
-  export default Pgranjas;
+  export default Index;

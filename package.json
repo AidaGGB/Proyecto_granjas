@@ -1,5 +1,5 @@
 {
-  "name": "wuagua",
+  "name": "Proyecto_granjas",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,10 +13,8 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
-  "homepage": "http://AidaGGB.github.io/Proyecto_react_wuagua",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+   "scripts": {
+    
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -1,4 +1,13 @@
 import './Registro.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink
+} from "react-router-dom";
+
 
 
 function Registro () {
@@ -8,7 +17,7 @@ function Registro () {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12" >
             <div className="card3">
-              <a href="#"><i className="fas fa-times-circle"></i></a>
+              <Link to="./granjas" href="#"><i className="fas fa-times-circle"></i></Link>
             <div className="card-body ">
                 <div className="titleform">
                   <h3 className="card-title">REGISTRARSE</h3>
@@ -59,8 +68,8 @@ function Registro () {
                     </div>
                   </div>
                   <div className="botonreg">
-                    <button type="submit" className="btn-reg">Enviar</button>
-                    <button type="submit" className="btn-reg2">Cerrar</button>
+                    <button type="submit" className="btn-reg" onClick={()=>{alert('Información guardada correctamente')}}>Enviar</button>
+                     <Link to="/granjas"><button type="submit" className="btn-reg2">Cerrar</button></Link>
                   </div>
                   
                 </form>

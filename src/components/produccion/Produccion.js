@@ -43,7 +43,7 @@ function Produccion () {
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
                         <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lactea"><i class="bi bi-plus-circle"></i>   Registro</a>
-                        <a href="#" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</a>
+                        <Link to="/historial" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</Link>
                       </div>
                     </div>
                   </div>
@@ -60,7 +60,7 @@ function Produccion () {
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
                         <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lactea"><i class="bi bi-plus-circle"></i>   Registro</a>
-                        <a href="#" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</a>
+                        <Link to="/historial" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</Link>
                       </div>
                     </div>
                   </div>
@@ -77,7 +77,7 @@ function Produccion () {
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
                         <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lactea"><i class="bi bi-plus-circle"></i>   Registro</a>
-                        <a href="#" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</a>
+                        <Link to="/historial" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</Link>
                       </div>
                     </div>
                   </div>
@@ -96,7 +96,7 @@ function Produccion () {
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
                         <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lactea"><i class="bi bi-plus-circle"></i>   Registro</a>
-                        <a href="#" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</a>
+                        <Link to="/historial" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</Link>
                       </div>
                     </div>
                   </div>
@@ -113,7 +113,7 @@ function Produccion () {
                       <p classNamen="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
                         <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lactea"><i class="bi bi-plus-circle"></i>   Registro</a>
-                        <a href="#" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</a>
+                        <Link to="/historial" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</Link>
                       </div>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ function Produccion () {
                       <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
                         <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lactea"><i class="bi bi-plus-circle"></i>   Registro</a>
-                        <a href="#" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</a>
+                        <Link to="/historial" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</Link>
                       </div>
                     </div>
                   </div>
@@ -143,7 +143,7 @@ function Produccion () {
               
             </div>
           </div> 
-            <h3 className="siguiente">Siguiente  <i className="fas fa-arrow-right"></i></h3>
+            <h3></h3>
           <Mproduccion />
         </div>
     );

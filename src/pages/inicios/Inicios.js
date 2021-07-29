@@ -1,15 +1,16 @@
 import Header from '../../components/header/Header';
-import Pprincipal from '../../components/pprincipal/Pprincipal';
+import Login from '../../components/login/Login';
 import Footer from '../../components/footer/Footer';
 
-function Home () {
+function Inicios () {
     return (
       <div>
         <Header/>
-        <Pprincipal/>
+        <Login />
         <Footer />
       </div>
     );
   }
   
-  export default Home;
+  export default Inicios;
+  

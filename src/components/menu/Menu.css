@@ -3,9 +3,9 @@
 
 .btn-secondary{
    background-color: #CB262A;
-   box-shadow: 2px 2px 3px black;
+   box-shadow: 2px 2px 3px #5C5749;
    margin-top: 20px;
-    
+   border: none;
 }
 
 .btn-secondary div.barry {
@@ -40,6 +40,10 @@
 .dropdown li{
     border-bottom:1px solid #CB262A;
     font-family: 'Poppins', sans-serif;
+}
+
+#frentem{
+  position: fixed;
 }
 
 

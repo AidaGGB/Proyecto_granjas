@@ -1,11 +1,4 @@
 
-@font-face{
-	font-family:"chewy"; 
-	src:url("../fonts/Chewy.ttf") format("truetype");
-	font-style: normal;
-	font-weight: normal;
-}
-
 .containere{
     background-color: white;
 }
@@ -13,4 +6,31 @@
 .error{
     text-align: center;
     margin-top: 20px;
+}
+.card404{
+	width: 50rem;
+    height: 30rem;
+	background-image: url(./alqueriaerror.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+}
+
+.card404 i{
+    float: right;
+    font-size: 35px;
+    margin: 5px;
+    color:black;
+}
+
+.carderror h1{
+	text-align: center;
+    color: white;
+    margin-top: 30px;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bold;
+    padding-top: 25px;
 }

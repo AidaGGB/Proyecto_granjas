@@ -20,7 +20,7 @@
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     border: none;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 3px 3px 5px #5C5749;
     margin-left:60px;
     font-family: 'Poppins', sans-serif;
 }
@@ -39,7 +39,7 @@
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border: none;
-    box-shadow: 3px 3px 5px black;
+    box-shadow: 3px 3px 5px #5C5749;
     border-left: 1px solid #CB262A; 
     font-family: 'Poppins', sans-serif;
 }

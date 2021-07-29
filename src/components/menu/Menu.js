@@ -24,11 +24,17 @@ function Menu () {
                     </div>
                   </button>
                   
-                  <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <ul className="dropdown-menu" id="frentem" aria-labelledby="dropdownMenuButton1">
                     <div>
-                      <li><a className="dropdown-item" data-bs-toggle="collapse"  href="#">Inicio</a></li>
-                      <li><a className="dropdown-item" data-bs-toggle="collapse" href="#">Nuestras granjas</a></li>
-                      <li><a className="dropdown-item" data-bs-toggle="collapse" href="#">Producción láctea</a></li>
+                      <li>
+                        <Link to="/index" className="dropdown-item" data-bs-toggle="collapse">Inicio</Link>
+                      </li>
+                      <li>
+                        <Link to="/granjas" className="dropdown-item" data-bs-toggle="collapse">Nuestras granjas</Link>
+                      </li>
+                      <li>
+                        <Link to="/produccion" className="dropdown-item" data-bs-toggle="collapse">Producción láctea</Link>
+                      </li>
                     </div>
                   </ul>
               </div>

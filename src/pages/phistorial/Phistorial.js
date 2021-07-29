@@ -1,16 +1,15 @@
 import Header2 from '../../components/header2/Header2';
-import Granjas from '../../components/granjas/Granjas';
+import Historial from '../../components/historial/Historial';
 import Footer from '../../components/footer/Footer';
 
-
-function Pgranjas () {
+function Phistorial () {
     return (
       <div>
         <Header2 />
-        <Granjas />
-        <Footer />     
+        <Historial />
+        <Footer />      
       </div>
     );
   }
   
-  export default Pgranjas;
+  export default Phistorial;

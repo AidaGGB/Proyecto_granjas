@@ -17,12 +17,13 @@ function Login () {
             <img src={login} className="img-fluid"/>
           </div>
           <div className="card formulario col-sm-12 col-md-12 col-lg-6">
+            <Link to="./" href="#"><i className="fas fa-times-circle"></i></Link>
               <div className="card-body">
                 <h1>SISTEMA REGRAN</h1>
                 <h2>BIENVENIDOS</h2>
             
                 <p>Ingresa tu  usuario y contraseña para poder realizar la gestion de las granjas en el sistema REGRAN.</p>
-                <form className="form1">
+                <form className="form1" id="form1"  >
                   <input type="text" id="usuario" className="form-control" name="usuario" size="50" maxlength="50" required="required" placeholder=" Usuario"/>
                   <input type="text" id="contraseña" className="form-control" name="contraseña" size="50" maxlength="50" required="required" placeholder=" Contraseña"/>
                   <div className="recordar">
@@ -32,7 +33,9 @@ function Login () {
                     <div>
                       <a href="#">¿Olvidaste tu contraseña?</a>
                     </div>
-                    <input type="submit" value="Iniciar Sesión" className="sesion"/>
+                    <div>
+                      <Link to="/index"><input type="submit" value="Iniciar Sesión" className="sesion"/></Link>
+                    </div>
                   </div>
                 </form>
               </div>

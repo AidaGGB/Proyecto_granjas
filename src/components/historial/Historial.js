@@ -45,32 +45,38 @@ function Historial () {
                   <tr>
                     <td>dd/mm/aa</td>
                     <td>000000L</td>
-                    <td><button className="editarh"><i className="fas fa-pen"></i></button></td>
-                    <td><button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button></td>
+                    <td colspan="2"><button className="editarh"><i className="fas fa-pen"></i></button>
+                        <button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button>
+                    </td>
+                  
                   </tr>
                   <tr>
                     <td>dd/mm/aa</td>
                     <td>000000L</td>
-                    <td><button className="editarh"><i className="fas fa-pen"></i></button></td>
-                    <td><button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button></td>
+                    <td colspan="2"><button className="editarh"><i className="fas fa-pen"></i></button>
+                        <button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button>
+                    </td>
                   </tr>
                   <tr>
                     <td>dd/mm/aa</td>
                     <td>000000L</td>
-                    <td><button className="editarh"><i className="fas fa-pen"></i></button></td>
-                    <td><button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button></td>
+                    <td colspan="2"><button className="editarh"><i className="fas fa-pen"></i></button>
+                        <button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button>
+                    </td>
                   </tr>
                   <tr>
                     <td>dd/mm/aa</td>
                     <td>000000L</td>
-                    <td><button className="editarh"><i className="fas fa-pen"></i></button></td>
-                    <td><button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button></td>
+                    <td colspan="2"><button className="editarh"><i className="fas fa-pen"></i></button>
+                        <button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button>
+                    </td>
                   </tr>
                   <tr>
                     <td>dd/mm/aa</td>
                     <td>000000L</td>
-                    <td><button className="editarh"><i className="fas fa-pen"></i></button></td>
-                    <td><button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button></td>
+                    <td colspan="2"><button className="editarh"><i className="fas fa-pen"></i></button>
+                        <button className="eliminarh" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i></button>
+                    </td>
                   </tr>
                   </table>
                 </div>

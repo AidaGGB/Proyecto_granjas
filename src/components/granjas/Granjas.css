@@ -14,6 +14,7 @@
     font-size: 30px;
 }
 
+
 .btn-granja{
     width: 130px;
     height: 45px;
@@ -29,6 +30,7 @@
     color: #CB262A;
     border: 2px solid #CB262A;
 }
+
 
 .form-control{
    border-radius: 20px;
@@ -70,9 +72,11 @@
 }
 
 .granjasimg{
-     background-image: url(./granjasimg.png);
+    background-image: url(./granjasimg.png);
     background-size: cover;
     background-position: center center;
+    padding: 15px;
+   
 }
 
 .infogranjas{

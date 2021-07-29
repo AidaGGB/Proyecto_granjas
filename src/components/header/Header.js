@@ -20,8 +20,8 @@ function Header () {
             </div>
 
             <div className="boton col-sm-6 col-md-6 col-lg-2">
-              <button type="button" className="regran"> Sistema REGRAN </button>
-            </div>
+              <Link to="/inicios"><button type="button" className="regran"> Sistema REGRAN </button></Link>
+            </div> 
 			    </div>    
         </div>
       </div>
