@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+.titleh h1{
+	margin:auto;
+	text-align: center;
+	color: #004296;
+	border-bottom: 2px solid #ffd117;
+	width: 210px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.encabezadoh{
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+
+.encabezadoh h2{
+	color: #CB262A;
+	font-weight: bold;
+}
+
+.fechas{
+	text-align: right;
+}
+
+.form-control3{
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding: 8px;
+	border: 2px solid  #CB262A;
+	box-shadow: 0px 2px 3px #5c5749;
+	width: 160px;
+}
+
+.form-control3:focus{
+ outline: none;  
+}
+
+.form-control4{
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 8px;
+	border: 2px solid  #CB262A;
+	box-shadow: 0px 2px 3px #5c5749;
+	width: 160px;
+}
+.form-control4:focus{
+ outline: none;  
+}
+
+.filtrar{
+	color: #CB262A;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 10px;
+}
+.filtrar:hover{
+	color: #004296;
+}
+
+.tablah{
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	border-collapse: separate; 
+	border: 2px solid #5c5749;
+	background-color: rgb(255, 255, 255, 0.5);
+	width: 800px;
+	box-shadow: 2px 2px 3px #5c5749;
+}
+
+.tablah th{
+	color: #CB262A;
+	font-size: 30px;	
+	border: 1px solid #5c5749;
+}
+
+.tablah td{	
+	border: 1px solid #5c5749;
+	height: 40px;
+}
+
+.editarh{
+    width: 95px;
+    height: 25px;
+    font-size: 15px;
+    background-color: #004296;
+    border:none;
+    border-radius:  10px;
+    line-height: 10px;
+    color: white;
+    box-shadow: 2px 2px 3px #5c5749;
+}
+
+.editarh:hover{
+    background-color: white;
+    color:#004296;
+    font-weight: bolder;
+    border: 2px solid #004296;
+}
+
+.eliminarh{
+    width: 97px;
+    height: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #3BC37B;
+    color: white;
+    border-radius:  10px;
+    border: 1px solid #3BC37B;
+    line-height: 13px;
+    box-shadow: 2px 2px 3px #5c5749;
+}
+
+.eliminarh:hover{
+    background-color: white;
+    color:#3BC37B;
+    font-weight: bolder;
+    border: 2px solid #3BC37B;
+}
+
+.contenth{
+    font-family: 'Poppins', sans-serif;
+}
+
+.modal-title{
+    color: #CB262A;
+    font-size: 20px;  
+}
+
+.headerp{
+    border-bottom: 1px solid #FFD117;
+}
+
+.form-control2{
+    border-radius: 5px;
+    height: 30px;
+    background-color: #EFE9E9;
+    border: 1px solid #D6D0D0 ;
+    box-shadow: 2px 2px 3px black;
+    width: 150px;
+}
+
+.form-control2::placeholder {
+  color: black;  
+}
+
+.col-form-label{
+  margin-right: 20px;
+  font-weight: bold;
+  
+}
+
+.col-form-label2{
+  margin-right: 35px; 
+  font-weight: bold;
+}
+
+.bodyh p{
+    text-align: justify;
+}
+
+.footerp{
+    border-top: 1px solid #FFD117;
+}
+
+.btn-reg{
+    background-color: #3bc37b;
+    color: white;
+    width: 160px;
+    padding: 5px;
+    margin-top:20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 2px #5c5749;
+    font-weight: 500; 
+    margin-right: 15px;
+}
+
+.btn-reg:hover{
+    background-color: white;
+    color:#3bc37b;
+    border: 2px solid #3bc37b;
+    font-weight: bold;
+}
+
+.btn-reg2{
+    background-color: #004296;
+    color: white;
+    width: 160px;
+    padding: 5px;
+    margin-top:20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 2px #5c5749;
+    font-weight: 500;  
+}
+
+.btn-reg2:hover{
+    background-color: white;
+    color: #004296;
+    border: 2px solid #004296;
+    font-weight: bold;
+}

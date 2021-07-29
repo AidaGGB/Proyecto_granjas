@@ -14,7 +14,6 @@
     border-radius: 10px;
 }
 
-
 .card3 i{
     float: right;
     font-size: 35px;
@@ -23,9 +22,11 @@
 }
 
 .titleform{
-    text-align: center;
+    margin-bottom: 20px;
 }
+
 .titleform h3{
+    margin: auto;
     color:#004296;
     border-bottom: 2px solid #FFD117;
 	width: 180px;

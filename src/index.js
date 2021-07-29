@@ -12,14 +12,17 @@ import Inicio from './components/inicio/Inicio';
 import Granjas from './components/granjas/Granjas';
 import Registro from './components/registro/Registro';
 import Mgranjas from './components/granjas/Mgranjas';
+import Produccion from './components/produccion/Produccion';
+import Historial from './components/historial/Historial';
 
 ReactDOM.render(
   <React.StrictMode>
     <div>
     
       <Header2/>
-      <Granjas/>
-      <Registro/>
+      <Produccion/>
+      <Historial/>
+
       <Footer/>
         
     </div>

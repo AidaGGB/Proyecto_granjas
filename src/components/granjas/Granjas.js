@@ -1,5 +1,4 @@
 import './Granjas.css';
-import granjasimg from './granjasimg.png';
 import perfil from './granjaperfil.jpeg';
 import Mgranjas from './Mgranjas';
 
@@ -15,9 +14,9 @@ function Granjas () {
                     <h1>COMUNIDAD GRANJAS</h1>
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-3" >
-                    <div class="input-group mb-3">
+                    <div className="input-group mb-3">
                       <input type="text" className="form-control" placeholder="¿Que granja estas buscando?"   aria-label="Amount (to the nearest dollar)"/>
-                      <span className="input-group-text"><i class="fas fa-search"></i></span>
+                      <span className="input-group-text"><i className="fas fa-search"></i></span>
                     </div>
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-2" >
@@ -35,13 +34,13 @@ function Granjas () {
                       <img src={perfil}/>
                       <h6 className="card-title">Dulcinea</h6>
                       <h7>Datos</h7>
-                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
-                      <p class="card-text"><span>Ciudad:</span> Cota</p>
-                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
-                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <p className="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p className="card-text"><span>Ciudad:</span> Cota</p>
+                      <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
-                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
                   </div>
@@ -52,13 +51,13 @@ function Granjas () {
                       <img src={perfil}/>
                       <h6 className="card-title">Dulcinea</h6>
                       <h7>Datos</h7>
-                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
-                      <p class="card-text"><span>Ciudad:</span> Cota</p>
-                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
-                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <p className="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p className="card-text"><span>Ciudad:</span> Cota</p>
+                      <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
-                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
                   </div>
@@ -69,13 +68,13 @@ function Granjas () {
                       <img src={perfil}/>
                       <h6 className="card-title">Dulcinea</h6>
                       <h7>Datos</h7>
-                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
-                      <p class="card-text"><span>Ciudad:</span> Cota</p>
-                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
-                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <p className="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p className="card-text"><span>Ciudad:</span> Cota</p>
+                      <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
-                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
                   </div>
@@ -88,13 +87,13 @@ function Granjas () {
                       <img src={perfil}/>
                       <h6 className="card-title">Dulcinea</h6>
                       <h7>Datos</h7>
-                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
-                      <p class="card-text"><span>Ciudad:</span> Cota</p>
-                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
-                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <p className="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p className="card-text"><span>Ciudad:</span> Cota</p>
+                      <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
-                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
                   </div>
@@ -105,13 +104,13 @@ function Granjas () {
                       <img src={perfil}/>
                       <h6 className="card-title">Dulcinea</h6>
                       <h7>Datos</h7>
-                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
-                      <p class="card-text"><span>Ciudad:</span> Cota</p>
-                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
-                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <p className="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p className="card-text"><span>Ciudad:</span> Cota</p>
+                      <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
-                        <a href="#" class="btn btn-eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
                   </div>
@@ -122,13 +121,13 @@ function Granjas () {
                       <img src={perfil}/>
                       <h6 className="card-title">Dulcinea</h6>
                       <h7>Datos</h7>
-                      <p class="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
-                      <p class="card-text"><span>Ciudad:</span> Cota</p>
-                      <p class="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
-                      <p class="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
+                      <p className="card-text"><span>Propietario:</span> Pepito Pedro Perez Perez</p>
+                      <p className="card-text"><span>Ciudad:</span> Cota</p>
+                      <p className="card-text"><span>Dirección:</span> Km 7 vía variante Cota</p>
+                      <p className="card-text"><span>Datos de contacto:</span> 031-2333333 301 3333333</p>
                       <div className="botoncard">
-                        <a href="#" class="btn btn-primary"><i class="fas fa-pen"></i>   Editar</a>
-                        <a href="#" class="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i class="fas fa-trash-alt"></i>   Eliminar</a>
+                        <a href="#" className="btn btn-primary"><i className="fas fa-pen"></i>   Editar</a>
+                        <a href="#" className="btn btn-eliminar" data-bs-toggle="modal" data-bs-target="#eliminar"><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
                   </div>
@@ -137,11 +136,11 @@ function Granjas () {
               </div>
             </div>
 
-            <div className="col-sm-12 col-md-12 col-lg-4">
-              <img src={granjasimg}/>
+            <div className="col-sm-12 col-md-12 col-lg-4 granjasimg">
+              
             </div>
           </div> 
-            <h3 className="siguiente">Siguiente  <i class="fas fa-arrow-right"></i></h3>
+            <h3 className="siguiente">Siguiente  <i className="fas fa-arrow-right"></i></h3>
           <Mgranjas/>
         </div>
           

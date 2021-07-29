@@ -9,6 +9,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 .granjas i{
     font-size: 30px;
 }
@@ -68,6 +69,12 @@
     padding-right: 20px;
 }
 
+.granjasimg{
+     background-image: url(./granjasimg.png);
+    background-size: cover;
+    background-position: center center;
+}
+
 .infogranjas{
     text-align: center;
 }
@@ -92,6 +99,8 @@ span{
 
 .infogranjas p{
     font-size: 11px;
+    margin: auto;
+    text-align: left;
 }
 
 .botoncard{
@@ -138,7 +147,7 @@ span{
     border: 2px solid #3BC37B;
 }
 
-.modal-content{
+.contentgranjas{
     background-image: url(./meliminacion.jpeg);
     background-size: cover;
     background-position: center center;
@@ -146,16 +155,16 @@ span{
 
 }
 
-.modal-header{
+.headergranjas{
     border:none;
 }
 
-.modal-footer{
+.footergranjas{
     border:none;
     justify-content: center;
 }
 
-.modal-body h4{
+.bodygranjas h4{
     text-align: center;
     color: white;
     margin-top: 30px;
@@ -168,7 +177,7 @@ span{
 	color: white;
 	width: 170px;
     padding: 5px;
-    margin-top:20px;
+    margin-bottom: 40px;
     border-radius: 20px;
 	border: none;
 	box-shadow: 0px 2px 2px #5c5749;
@@ -186,9 +195,9 @@ span{
 .btn-m2{
     background-color: white;
 	color:#CB262A;
+    margin-bottom: 40px;
 	width: 170px;
     padding: 5px;
-    margin-top:20px;
     border-radius: 20px;
 	border: none;
 	box-shadow: 0px 2px 2px #5c5749;
