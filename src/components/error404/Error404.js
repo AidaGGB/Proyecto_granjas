@@ -15,7 +15,7 @@ function Error404 () {
         <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12">
               <div className="card card404">
-                <a href="#"><i className="fas fa-times-circle"></i></a>
+                <Link to="/"><i className="fas fa-times-circle"></i></Link>
                 <div className="card-body carderror">
                   <h1>¡OOPS!</h1>
                   <h1>ERROR 404</h1>

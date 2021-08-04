@@ -3,11 +3,12 @@ import Registro from '../../components/registro/Registro';
 import Footer from '../../components/footer/Footer';
 import {db} from '../../firebase';
 import React, {useEffect, useState} from "react";
+import { useParams } from 'react-router-dom';
 
 function Pregistro () {
   
   const [links,setlinks] = useState([])
-  const [currentId, setCurrentId] = useState('');
+  const {id} = useParams()
   
   //funcion que guarda y envia los datos a firebase, se llama con props en la funcion del componente//
   const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
@@ -34,7 +35,7 @@ function Pregistro () {
     return (
       <div>
         <Header2 />
-        <Registro {...{addOrEditLink, currentId, links}} />
+        <Registro {...{addOrEditLink, currentId: id, links}} />
         <Footer />       
       </div>
     );

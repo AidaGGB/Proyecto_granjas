@@ -15,13 +15,31 @@ import {
 
 function Produccion () {
 
+  const [registro,setRegistro] = useState([])
+
+  const addOrEditP = async (regobject) => {
+    await db.collection('registro').doc().set(regobject);
+    console.log("new task added")
+  };
+
+  const getLinksP = async () =>{
+    db.collection ('registro').onSnapshot((querySnapshot)=>{
+      const docsp = [];
+    querySnapshot.forEach ((doc) =>{
+       console.log(doc.data())
+       console.log(doc.id)
+       docsp.push({...doc.data(), id:doc.id});
+       });
+      setRegistro(docsp);
+     });
+ };
+
+  useEffect (() => {
+    getLinksP();
+  }, []);
+
   const [links,setlinks] = useState([])
   
-  //funcion que guarda y envi los datos a firebase, se llama con props en la funcion del componente//
-   const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
-    await db.collection('links').doc().set(linkObject)//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
-   };
-
   const getLinks = async () =>{
      db.collection ('links').onSnapshot((querySnapshot)=>{
        const docs = [];
@@ -84,7 +102,7 @@ function Produccion () {
               
             </div>
           </div> 
-          <Mproduccion />
+          <Mproduccion addOrEditP={addOrEditP} />
         </div>
     );
   }

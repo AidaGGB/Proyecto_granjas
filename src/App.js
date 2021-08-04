@@ -34,7 +34,7 @@ function App() {
               <Index/>
             </Route>
 
-            <Route exact path='/granjas'>
+            <Route path='/granjas'>
               <Pgranjas/>
             </Route>
 
@@ -50,10 +50,13 @@ function App() {
               <Pmodificacion/>
             </Route>
 
-            <Route exact path='/registro'>
+            <Route path='/registro/:id'>{/* desde esta ruta envio el parametro por url*/}
               <Pregistro/>
             </Route>
 
+            <Route path='/registro'>
+              <Pregistro/>
+            </Route>
 
             <Route path='*'>
               <Error/>

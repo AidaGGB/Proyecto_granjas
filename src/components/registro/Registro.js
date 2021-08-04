@@ -48,15 +48,16 @@ function Registro (props) {
   const getLinkById = async (id) => {
     const doc = await db.collection('links').doc(id).get();
     console.log(doc.data ())
-    
+    setValues ({...doc.data()})
   };
 
+  
   useEffect (() =>{
     if (props.currentId === ''){
       setValues({...initialStateValues});
     }
     else {
-      getLinkById(props.currentId);
+    getLinkById(props.currentId);
     }
   }, [props.currentId]);
 
@@ -68,7 +69,7 @@ function Registro (props) {
           <div className="row">
             <div className="col-sm-12 col-md-12 col-lg-12" >
             <div className="card3">
-              <Link to="./granjas" href="#"><i className="fas fa-times-circle"></i></Link>
+              <Link to="/granjas" href="#"><i className="fas fa-times-circle"></i></Link>
             <div className="card-body ">
                 <div className="titleform">
                   <h3 className="card-title">REGISTRARSE</h3>
@@ -177,7 +178,9 @@ function Registro (props) {
                     </div>
                   </div>
                   <div className="botonreg">
-                    <button type="submit" className="btn-reg" onClick={()=>{alert('Información guardada correctamente')}}>Enviar</button>
+                    <button type="submit" 
+                          className="btn-reg" 
+                          onClick={()=>{alert('Información guardada correctamente')}}>{props.currentId === '' ? 'Enviar': 'Modificar'}</button>
                      <Link to="/granjas"><button type="submit" className="btn-reg2">Cerrar</button></Link>
                   </div>
                   

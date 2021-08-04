@@ -15,10 +15,9 @@ import {
 function Granjas (props) {
 
   const [links,setlinks] = useState([])
-  const [currentId, setCurrentId] = useState('');
-  
+ 
 
-   //funcion que guarda y envi los datos a firebase, se llama con props en la funcion del componente//
+   //funcion que guarda y envia los datos a firebase, se llama con props en la funcion del componente//
    const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
     await db.collection('links').doc().set(linkObject)//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
    };
@@ -82,7 +81,7 @@ function Granjas (props) {
                       <p className="card-text"><span>Correo electrónico:</span> {link.correo}</p>
                       <p className="card-text"><span>Ruta:</span> {link.ruta}</p>
                       <div className="botoncard">
-                        <button className="btn btn-primary" onClick={() => setCurrentId(link.id)}><i className="fas fa-pen"></i>   Editar</button>
+                        <button className="btn btn-primary" onClick={() => window.location.replace(`/registro/${link.id}`)}><i className="fas fa-pen"></i>   Editar</button>
                         <a href="#" className="btn btn-eliminar" onClick={() => onDeleteLink (link.id)}><i className="fas fa-trash-alt"></i>   Eliminar</a>
                       </div>
                     </div>
