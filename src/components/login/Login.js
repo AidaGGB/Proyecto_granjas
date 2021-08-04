@@ -1,6 +1,6 @@
 import './Login.css';
 import login from './login.png';
-import React from "react";
+import React,{useState} from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,7 +9,8 @@ import {
 } from "react-router-dom";
 
 
-function Login () {
+function Login (props) {
+    
     return (
       <div className="container-fluid">
 		    <div className="row">
@@ -23,9 +24,23 @@ function Login () {
                 <h2>BIENVENIDOS</h2>
             
                 <p>Ingresa tu  usuario y contraseña para poder realizar la gestion de las granjas en el sistema REGRAN.</p>
-                <form className="form1" id="form1"  >
-                  <input type="text" id="usuario" className="form-control" name="usuario" size="50" maxlength="50" required="required" placeholder=" Usuario"/>
-                  <input type="text" id="contraseña" className="form-control" name="contraseña" size="50" maxlength="50" required="required" placeholder=" Contraseña"/>
+                <form className="form1" id="form1">
+                  <input type="text" 
+                        id="usuario" 
+                        className="form-control" 
+                        name="usuario" size="50" maxlength="50" 
+                        required="required" 
+                        placeholder=" Usuario" 
+                        
+                  />
+                  <input type="text" 
+                        id="contraseña" 
+                        className="form-control" 
+                        name="contraseña" size="50" maxlength="50" 
+                        required="required" 
+                        placeholder=" Contraseña" 
+                        
+                  />
                   <div className="recordar">
                     <div>
                       <input type="checkbox"  required="required" />   Recordar mis datos
@@ -34,7 +49,7 @@ function Login () {
                       <a href="#">¿Olvidaste tu contraseña?</a>
                     </div>
                     <div>
-                      <Link to="/index"><input type="submit" value="Iniciar Sesión" className="sesion"/></Link>
+                      <Link to="./index"><input type="submit" value="Iniciar Sesión" className="sesion"/></Link>
                     </div>
                   </div>
                 </form>

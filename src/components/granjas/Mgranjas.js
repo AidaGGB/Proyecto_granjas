@@ -3,7 +3,10 @@ import './Granjas.css';
 
 
 
-function Mgranjas () {
+function Mgranjas (props) {
+  
+
+   
     return (
     
         <div class="modal" tabindex={-1} id="eliminar">
@@ -16,7 +19,7 @@ function Mgranjas () {
                 <h4>¿Esta seguro que desea borrar este registro?</h4>
               </div>
               <div class="modal-footer footergranjas">
-              <button type="button" class="btn-m" data-bs-dismiss="modal" onClick={()=>{alert('Información elimidada')}}>! Si, Eliminar !</button>
+              <button type="button" class="btn-m" data-bs-dismiss="modal">! Si, Eliminar !</button>
               <button type="button" className="btn-m2" data-bs-dismiss="modal">! No Cancelar !</button>
             </div>
             </div>

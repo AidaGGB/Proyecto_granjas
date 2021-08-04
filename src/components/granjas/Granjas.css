@@ -14,6 +14,9 @@
     font-size: 30px;
 }
 
+.cajasg{
+    margin-bottom: 10px;
+}    
 
 .btn-granja{
     width: 130px;
@@ -53,9 +56,8 @@
     color: #CB262A;
 }
 
-.card2{
-    width: 18rem;
-    height: 237px;
+.cardgranjas{
+    
     margin-left: 10px;
     margin-bottom: 10px;
     box-shadow: 1px 1px 3px #5c5749;
@@ -75,11 +77,11 @@
     background-image: url(./granjasimg.png);
     background-size: cover;
     background-position: center center;
-    padding: 15px;
    
 }
 
 .infogranjas{
+    
     text-align: center;
 }
 .infogranjas img{
@@ -101,11 +103,6 @@ span{
     font-weight: bold;
 }
 
-.infogranjas p{
-    font-size: 11px;
-    margin: auto;
-    text-align: left;
-}
 
 .botoncard{
     margin-top: 7px;

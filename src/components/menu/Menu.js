@@ -14,7 +14,7 @@ function Menu () {
     return (
            
 
-                <div className="dropdown">
+                <div className="dropdown ">
                   <button className="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class='barry'>
                       <span class='bar'></span>
@@ -24,16 +24,16 @@ function Menu () {
                     </div>
                   </button>
                   
-                  <ul className="dropdown-menu" id="frentem" aria-labelledby="dropdownMenuButton1">
+                  <ul className="dropdown-menu position-fixed" aria-labelledby="dropdownMenuButton1">
                     <div>
                       <li>
-                        <Link to="/index" className="dropdown-item" data-bs-toggle="collapse">Inicio</Link>
+                        <Link to="/index" className="dropdown-item">Inicio</Link>
                       </li>
                       <li>
-                        <Link to="/granjas" className="dropdown-item" data-bs-toggle="collapse">Nuestras granjas</Link>
+                        <Link to="/granjas" className="dropdown-item">Nuestras granjas</Link>
                       </li>
                       <li>
-                        <Link to="/produccion" className="dropdown-item" data-bs-toggle="collapse">Producción láctea</Link>
+                        <Link to="/produccion" className="dropdown-item">Producción láctea</Link>
                       </li>
                     </div>
                   </ul>
