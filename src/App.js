@@ -38,11 +38,11 @@ function App() {
               <Pgranjas/>
             </Route>
 
-            <Route exact path='/produccion'>
+            <Route path='/produccion'>
               <Pproduccion/>
             </Route>
 
-            <Route exact path='/historial'>
+            <Route path='/historial'>
               <Phistorial/>
             </Route>
 

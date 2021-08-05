@@ -1,13 +1,17 @@
 import './Produccion.css';
 import React,{useState, useEffect} from "react";
 import { db } from '../../firebase';
+import { Link } from 'react-router-dom';
 
 
 function Mproduccion (props) {
+
+  
   
   const initialStateValuesP={
     fecha:'',
     registro:'',
+    idgranja:'',
    };
 
   //Funcion que coloca los valores iniciales (use state) en el array
@@ -26,6 +30,16 @@ function Mproduccion (props) {
     setValuesP({...initialStateValuesP})
   };
 
+  useEffect (() =>{
+    if (props.currentIdP === ''){
+      setValuesP({...initialStateValuesP});
+    }
+    else{
+      console.log("editing")
+    }
+  }, [props.currentIdP]);
+
+
     return (
       <div className="modal" tabindex={-1} id="lactea" >
         <div className="modal-dialog modal-dialog-centered">
@@ -37,7 +51,16 @@ function Mproduccion (props) {
             <div className="modal-body bodyp">
               <form className="row g-3" onSubmit={handleSubmitP}>
                 <div className="col-md-6 mb-3 modalp">
-                  <label for="fecha" class="col-sm-2 col-form-label">Fecha:</label>
+                {props.pid} 
+                <label for="idgranja" class="col-sm-2 col-form-label">Id granja</label>
+                  <input type="hidden" 
+                        className="form-control2" 
+                        id="idgranja"
+                        name="idgranja"
+                        onChange={handleInputChangeP}
+                        values={valuesp.idgranja =props.pid}
+                  />
+                <label for="fecha" class="col-sm-2 col-form-label">Fecha:</label>
                   <input type="date" 
                         className="form-control2" 
                         id="fecha"

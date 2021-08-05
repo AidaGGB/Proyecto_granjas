@@ -10,8 +10,6 @@ import {
 } from "react-router-dom";
 
 
-
-
 function Granjas (props) {
 
   const [links,setlinks] = useState([])
@@ -23,7 +21,7 @@ function Granjas (props) {
    };
 
    const onDeleteLink = id =>{
-     if (window.confirm("¿Esta seguro de elimiar este registro?")){
+     if (window.confirm("¿Esta seguro de eliminar este registro?")){
        db.collection('links').doc(id).delete();
      }
     
