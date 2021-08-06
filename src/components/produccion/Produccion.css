@@ -97,6 +97,7 @@ span{
 }
 
 .botoncard{
+   
     margin-top: 7px;
 }
 
@@ -275,7 +276,12 @@ span{
     font-weight: bold;
 }
 
-
+.modalp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
 
 
 

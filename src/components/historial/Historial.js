@@ -1,12 +1,13 @@
 import './Historial.css';
 import Granja from './granjaperfil.jpeg';
-import Mfiltrar from './Mfiltrar';
+import Mproduccion from '../produccion/Mproduccion';
 import {db} from '../../firebase';
 import React, {useEffect, useState} from "react";
 
 
 
-function Historial () {
+
+function Historial (props) {
 
   const [registro,setRegistro] = useState([])
   const [currentIdP, setCurrentIdP] = useState ('');
@@ -71,16 +72,16 @@ useEffect (() => {
 			  </div> 
 
         <div className="row encabezadoh" >
-       
-          <div className="col-sm-12 col-md-12 col-lg-2">
-            <img src={Granja}/>
+          <div className="col-sm-12 col-md-12 col-lg-5 " >
+            <h2>Granja</h2>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-2 " >
-           {links.map (link => (
-            <h2>{link.granja}</h2>
-            ))}
+          <div className="col-sm-12 col-md-12 col-lg-3" >
+            <div className="input-group mb-2">
+              <input type="text" className="form-control" placeholder="¿Que granja estas buscando?"   aria-label="Amount (to the nearest dollar)"/>
+              <span className="input-group-text"><i className="fas fa-search"></i></span>
+            </div>
           </div>
-          <div className="col-sm-12 col-md-12 col-lg-8 fechas">
+          <div className="col-sm-12 col-md-12 col-lg-4 fechas">
             <input type="date" className="form-control3" id="fecha1"/>
             <input type="date" className="form-control4" id="fecha2"/>
             <a href="#" className="filtrar" data-bs-toggle="modal" data-bs-target="#filtroh">Filtrar</a>
@@ -95,6 +96,8 @@ useEffect (() => {
               <tr>
                 <th>Fecha</th>
                 <th>Cantidad/litros</th>
+                <th>Granja</th>
+                <th>Registro</th>
                 <th colspan="2">Acciones</th>
               </tr>
               {registro.map(reg => (
@@ -102,6 +105,7 @@ useEffect (() => {
                 <td>{reg.fecha}</td>
                 <td>{reg.registro}</td>
                 <td>{reg.idgranja}</td>
+                <td>{reg.id}</td>
               
                 <td colspan="2">
                     <button className="editarh"
@@ -109,6 +113,8 @@ useEffect (() => {
                           <i className="fas fa-pen"></i>
                     </button>
                     <button className="eliminarh" 
+                            data-bs-toggle="modal" 
+                            data-bs-target={`#${reg.id}`}
                           onClick={() =>(onDeleteReg(reg.id))}>
                           <i className="fas fa-trash-alt"></i>
                     </button>
@@ -121,7 +127,7 @@ useEffect (() => {
           
         </div>
       
-        <Mfiltrar/>
+        <Mproduccion Mid={currentIdP}{...{currentIdP}}/> {/* llamar nuevamente el modal pra que cuando sede click en editar se lance el modal y poder modificar los datos, se le paso al modal el currentid y el props que trae el id del modal segun el registro*/}
       </div>
         
     );

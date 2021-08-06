@@ -72,7 +72,7 @@ function Granjas (props) {
                       <img src={perfil}/>
                       <h6 className="card-title">{link.granja}</h6>
                       <h7>Datos</h7>
-                      <p className="card-text"><span>Propietario:</span> {link.nombrep}{link.apellidop}</p>
+                      <p className="card-text"><span>Propietario:</span> {link.nombrep} {link.apellidosp}</p>
                       <p className="card-text"><span>Ciudad:</span> {link.ciudad}</p>
                       <p className="card-text"><span>Dirección:</span> {link.direccion}</p>
                       <p className="card-text"><span>Datos de contacto:</span> {link.telefono} <br/> {link.celular}</p>

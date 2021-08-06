@@ -60,26 +60,26 @@ function Produccion (props) {
     return (
       <div>
                   
-                  <div className="card cardgranjas">
+                  <div className="card cardgranjas" >
                     <div className="card-body infogranjas">
                       <img src={perfil}/>
                       <h6 className="card-title">{props.pnom}</h6>
                       <h7>Datos</h7>
-                      <p className="card-text"><span>Propietario:</span></p>
-                      <p className="card-text"><span>Ciudad:</span></p>
-                      <p className="card-text"><span>Dirección:</span></p>
-                      <p className="card-text"><span>Datos de contacto:</span> <br/></p>
-                      <p className="card-text"><span>Correo electrónico:</span></p>
-                      <p className="card-text"><span>Ruta:</span></p>
+                      <p className="card-text"><span>Propietario:</span> {props.pnombre} {props.papellidos}</p>
+                      <p className="card-text"><span>Ciudad:</span> {props.pciudad}</p>
+                      <p className="card-text"><span>Dirección:</span> {props.pdireccion}</p>
+                      <p className="card-text"><span>Datos de contacto:</span> {props.ptel}<br/>{props.pcel}</p>
+                      <p className="card-text"><span>Correo electrónico:</span> {props.pmail}</p>
+                      <p className="card-text"><span>Ruta:</span> {props.pruta}</p>
                       <div className="botoncard">
-                        <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#lactea"><i class="bi bi-plus-circle"></i>   Registro</a>
+                        <a href="#" className="btn btn-primary" data-bs-toggle="modal" data-bs-target={`#${props.pnom.split(' ').join('')}`}><i class="bi bi-plus-circle"></i>   Registro</a>
                         <Link to="/historial" className="btn btn-eliminar"><i class="bi bi-clock-history"></i>   Historial</Link>
                       </div>
                     </div>
                   </div>
-                         
-          <Mproduccion pid={props.pid} {...{addOrEditP, currentIdP, registro}}/>
-      </div>  
+                       
+          <Mproduccion Mid={props.pnom} pid={props.pid} {...{addOrEditP, currentIdP, registro}}/>
+      </div> /*se definio un props para colocarle al modal como id el nombre de la granja, y que lance 1 modal por cada granja con su id*/
     );
   }
   

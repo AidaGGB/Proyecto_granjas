@@ -47,7 +47,7 @@ function Pproduccion() {
               <div className="row ">
                 {links.map (link => (
                   <div  className="col-sm-12 col-md-12 col-lg-4" key={link.id }>
-                    <Produccion pid={link.id} pnom={link.granja} />
+                    <Produccion pid={link.id} pnom={link.granja} pnombre={link.nombrep} papellidos={link.apellidosp} pciudad={link.ciudad} pdireccion={link.direccion} ptel={link.telefono} pcel={link.celular} pmail={link.correo} pruta={link.ruta} />
                   </div>
                 ))}
               </div>

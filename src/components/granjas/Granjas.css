@@ -63,6 +63,7 @@
     box-shadow: 1px 1px 3px #5c5749;
     border-radius: 5px;
     background-image: url(./fondocards.jpeg);
+    min-height: 310px;
    
 }
 

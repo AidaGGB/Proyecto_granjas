@@ -6,8 +6,8 @@
 	color: #004296;
 	border-bottom: 2px solid #ffd117;
 	width: 210px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 40px;
+	margin-bottom: 50px;
 	font-weight: bold;
 }
 
@@ -15,11 +15,14 @@
 	display: flex;
 	align-items: center;
 	margin: auto;
+   
 }
 
 .encabezadoh h2{
 	color: #CB262A;
 	font-weight: bold;
+    margin-left: 30px;
+   
 }
 
 .fechas{
@@ -29,7 +32,7 @@
 .form-control3{
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
-	padding: 8px;
+	padding: 4px;
 	border: 2px solid  #CB262A;
 	box-shadow: 0px 2px 3px #5c5749;
 	width: 160px;
@@ -45,7 +48,7 @@
 .form-control4{
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	padding: 8px;
+	padding: 4px;
 	border: 2px solid  #CB262A;
 	box-shadow: 0px 2px 3px #5c5749;
 	width: 160px;
@@ -58,7 +61,7 @@
 
 .filtrar{
 	color: #CB262A;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: bold;
 	font-family: 'Poppins', sans-serif;
 	margin-left: 10px;
@@ -75,7 +78,7 @@
 	border-collapse: separate; 
 	border: 2px solid #5c5749;
 	background-color: rgb(255, 255, 255, 0.5);
-	width: 800px;
+	width: 1100px;
 	box-shadow: 2px 2px 3px #5c5749;
 }
 
@@ -212,4 +215,9 @@
     color: #004296;
     border: 2px solid #004296;
     font-weight: bold;
+}
+
+.buscadorh{
+    display: flex;
+    justify-content: space-between;
 }

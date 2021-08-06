@@ -6,8 +6,6 @@ import { Link } from 'react-router-dom';
 
 function Mproduccion (props) {
 
-  
-  
   const initialStateValuesP={
     fecha:'',
     registro:'',
@@ -24,10 +22,14 @@ function Mproduccion (props) {
 };
 
 
-  const handleSubmitP= (e) =>{
+  const handleSubmitP= async (e) =>{
     e.preventDefault ();
-    props.addOrEditP(valuesp);
-    setValuesP({...initialStateValuesP})
+    await props.addOrEditP(valuesp)
+    .then(respuesta=>{
+      setValuesP(initialStateValuesP)
+      console.log(valuesp)
+    })
+    
   };
 
   useEffect (() =>{
@@ -38,10 +40,12 @@ function Mproduccion (props) {
       console.log("editing")
     }
   }, [props.currentIdP]);
-
+  
+  
+  
 
     return (
-      <div className="modal" tabindex={-1} id="lactea" >
+      <div className="modal" tabindex={-1} id={props.Mid.split(' ').join('')} >{/* el id trae el nombrede la granja x 1/2 de un props, ene l id se esta uniendo el nombre de la granja para que quede 1 solo string el siplit toma cada palabra del nombre y lo coloca en e1 array, el join une todod lo del array y lo deja como un string*/}
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header headerp">
@@ -49,16 +53,14 @@ function Mproduccion (props) {
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body bodyp">
-              <form className="row g-3" onSubmit={handleSubmitP}>
+              
+              <form className="row g-3" onSubmit={handleSubmitP} >
                 <div className="col-md-6 mb-3 modalp">
-                {props.pid} 
-                <label for="idgranja" class="col-sm-2 col-form-label">Id granja</label>
                   <input type="hidden" 
-                        className="form-control2" 
                         id="idgranja"
                         name="idgranja"
                         onChange={handleInputChangeP}
-                        values={valuesp.idgranja =props.pid}
+                        values={valuesp.idgranja=props.pid}
                   />
                 <label for="fecha" class="col-sm-2 col-form-label">Fecha:</label>
                   <input type="date" 
