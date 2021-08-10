@@ -22,7 +22,7 @@ function Mgranjas (props) {
               <button type="button" class="btn-m" data-bs-dismiss="modal">! Si, Eliminar !</button>
               <button type="button" className="btn-m2" data-bs-dismiss="modal">! No Cancelar !</button>
             </div>
-            </div>
+            </div> 
           </div>
         </div>
           

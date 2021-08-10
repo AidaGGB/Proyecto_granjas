@@ -3,8 +3,8 @@ import Granja from './granjaperfil.jpeg';
 import Mproduccion from '../produccion/Mproduccion';
 import {db} from '../../firebase';
 import React, {useEffect, useState} from "react";
-
-
+import Swal from "sweetalert2";
+import meliminacion from "../granjas/meliminacion.jpeg";
 
 
 function Historial (props) {
@@ -21,10 +21,38 @@ function Historial (props) {
   };
 
   const onDeleteReg = id =>{
-    if (window.confirm("¿Esta seguro de eliminar este registro?")){
-      db.collection('registro').doc(id).delete();
-    }
-  };
+    Swal.fire({
+        showCancelButton: true,
+        title: '¿Desea eliminar este registro?',
+        confirmButtonColor: '#004296',
+        cancelButtonColor: '#CB262A',
+        confirmButtonText: 'Sí, Eliminelo!',
+        cancelButtonText: 'No, Cancelar!',
+        buttonsStyling: false,
+        showCloseButton: true,
+        background: false,
+        background: `url(${meliminacion})`,
+
+        customClass:{
+        popup: 'contentgranjas',
+        title: 'bodygranjas',
+        background: 'contentgranjas',
+        confirmButton: 'btn-m',
+        cancelButton: 'btn-m2',
+      }
+
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+        'Registro Eliminado',
+        '',
+        'success',
+        db.collection('registro').doc(id).delete()
+        )
+      }
+    })
+  }
+
 
   const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
     await db.collection('links').doc().set(linkObject)//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
@@ -52,6 +80,7 @@ function Historial (props) {
      setlinks(docs);
    });
   };
+
 
 
 useEffect(() =>{
@@ -109,6 +138,8 @@ useEffect (() => {
               
                 <td colspan="2">
                     <button className="editarh"
+                          data-bs-toggle="modal"
+                          data-bs-target="#plactea"
                           onClick={() => (setCurrentIdP(reg.id))}>
                           <i className="fas fa-pen"></i>
                     </button>
@@ -126,8 +157,8 @@ useEffect (() => {
         
           
         </div>
-      
-        <Mproduccion Mid={currentIdP}{...{currentIdP}}/> {/* llamar nuevamente el modal pra que cuando sede click en editar se lance el modal y poder modificar los datos, se le paso al modal el currentid y el props que trae el id del modal segun el registro*/}
+       
+        <Mproduccion {...{currentIdP}}/> {/* llamar nuevamente el modal pra que cuando sede click en editar se lance el modal y poder modificar los datos, se le paso al modal el currentid y el props que trae el id del modal segun el registro*/}
       </div>
         
     );

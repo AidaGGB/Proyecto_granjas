@@ -6,7 +6,7 @@ import React, {useEffect, useState} from "react";
 
 function Pproduccion() {
 
-   const [currentIdP, setCurrentIdP] = useState ('');
+  const [currentIdP, setCurrentIdP] = useState ('');
      
   const [links,setlinks] = useState([])
   

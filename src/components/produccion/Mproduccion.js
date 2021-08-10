@@ -32,12 +32,20 @@ function Mproduccion (props) {
     
   };
 
+
+  const getLinkByIdP= async (id)=>{
+    const doc= await db. collection('registro').doc(id).get();
+    console.log(doc.data())
+    setValuesP(doc.data())
+  }
+  
+
   useEffect (() =>{
     if (props.currentIdP === ''){
       setValuesP({...initialStateValuesP});
     }
     else{
-      console.log("editing")
+      getLinkByIdP(props.currentIdP)
     }
   }, [props.currentIdP]);
   
@@ -45,7 +53,7 @@ function Mproduccion (props) {
   
 
     return (
-      <div className="modal" tabindex={-1} id={props.Mid.split(' ').join('')} >{/* el id trae el nombrede la granja x 1/2 de un props, ene l id se esta uniendo el nombre de la granja para que quede 1 solo string el siplit toma cada palabra del nombre y lo coloca en e1 array, el join une todod lo del array y lo deja como un string*/}
+      <div className="modal" tabindex={-1} id={props.Mid?.split(' ').join('') || "plactea"} >{/* el id trae el nombrede la granja x 1/2 de un props, ene l id se esta uniendo el nombre de la granja para que quede 1 solo string el siplit toma cada palabra del nombre y lo coloca en e1 array, el join une todod lo del array y lo deja como un string*/}
         <div className="modal-dialog modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header headerp">
@@ -60,7 +68,7 @@ function Mproduccion (props) {
                         id="idgranja"
                         name="idgranja"
                         onChange={handleInputChangeP}
-                        values={valuesp.idgranja=props.pid}
+                        value={valuesp.idgranja=props.pid}
                   />
                 <label for="fecha" class="col-sm-2 col-form-label">Fecha:</label>
                   <input type="date" 
@@ -68,7 +76,7 @@ function Mproduccion (props) {
                         id="fecha"
                         name="fecha"
                         onChange={handleInputChangeP}
-                        values={valuesp.fecha}
+                        value={valuesp.fecha}
                   />
                 </div>
                 <div className="col-md-6 mb-3 modalp">
@@ -79,7 +87,7 @@ function Mproduccion (props) {
                         placeholder="Cantidad/litros"
                         name="registro"
                         onChange={handleInputChangeP}
-                        values={valuesp.registro}                         
+                        value={valuesp.registro}                         
                   />
                 </div>
                 <div className="modal-footer footerp">

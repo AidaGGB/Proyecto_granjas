@@ -20,9 +20,16 @@ function Produccion (props) {
   
 
   const addOrEditP = async (regobject) => {
-    await db.collection('registro').doc().set(regobject);
-    console.log("new task added")
+    if (currentIdP=== "") {
+     await db.collection('registro').doc().set(regobject);
+     console.log("new task added")
+    }
+    else{
+      await db.collection('registro').doc(currentIdP).update(regobject);
+    }
   };
+
+
 
   const getLinksP = async () =>{
     db.collection ('registro').onSnapshot((querySnapshot)=>{

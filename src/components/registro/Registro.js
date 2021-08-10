@@ -37,10 +37,60 @@ function Registro (props) {
       setValues({...values, [name]:value})//guarda lo que se esta escribiendo en el estado//
   };
 
+  const Letras = str =>{
+    return  /^[a-zA-Z ]{2,30}$/.test(str);
+  }
+
+  const Direccion = str =>{
+    return  /^[A-Za-z0-9\s#-]+$/.test(str);
+  }
+
+  const Numeros = str =>{
+    return  /^\d{7,14}$/.test(str);
+  }
+
+  const Email = str =>{
+    return  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(str);
+  }
+
+  const Ruta = str =>{
+    return  /^[a-zA-Z0-9]{1,3}$/.test(str);
+  }
+  
 
   // funcion que maneja el evento dentro del formulario//
   const handleSubmit= (e) =>{
     e.preventDefault ();
+    if(!Letras(values.granja)){
+      window.alert("Datos invalidos")
+    }
+    else if (!Letras(values.nombrep)) {
+      window.alert("Datos invalidos")
+    }
+    else if (!Letras(values.apellidosp)) {
+      window.alert("Datos invalidos")
+    }
+    else if (!Letras(values.ciudad)) {
+      window.alert("Datos invalidos")
+    }
+    else if (!Direccion(values.direccion)) {
+      window.alert("Datos invalidos")
+    }
+    else if (!Numeros(values.telefono)) {
+      window.alert("Datos invalidos")
+    }
+    else if (!Numeros(values.celular)) {
+      window.alert("Datos invalidos")
+    }
+    else if (!Email(values.correo)) {
+      window.alert("Datos invalidos")
+    }
+    else if (!Ruta(values.ruta)) {
+      window.alert("Datos invalidos")
+    }
+    else{
+       alert('Información guardada correctamente')
+    }
     props.addOrEditLink(values);//con el props trae la funcion que se ejecuta en el inicios//
     setValues({...initialStateValues})//limpia el formulario, trae los valores iniciales despues de ingresar informacion//
   };
@@ -61,7 +111,10 @@ function Registro (props) {
     }
   }, [props.currentId]);
 
-  
+  //const name= [/AASDRFGHJK]
+   //if (name.test (value.granja)=== false){
+   // window.alert(ingrese un valor valido)
+  //}
 
     return (
       <div>
@@ -123,7 +176,7 @@ function Registro (props) {
                     />
                   </div>
                   <div className="col-md-6">
-                    <input type="number" 
+                    <input type="text" 
                           className="form-control forminput" 
                           id="tel" 
                           placeholder="Teléfono:"
@@ -133,7 +186,7 @@ function Registro (props) {
                     />
                   </div>
                   <div className="col-md-6">
-                    <input type="number" 
+                    <input type="text" 
                           className="form-control forminput" 
                           id="celu" placeholder="Número de celular:"
                           name="celular"
@@ -180,7 +233,7 @@ function Registro (props) {
                   <div className="botonreg">
                     <button type="submit" 
                           className="btn-reg" 
-                          onClick={()=>{alert('Información guardada correctamente')}}>{props.currentId === '' ? 'Enviar': 'Modificar'}</button>
+                          > Enviar</button>  {/*{props.currentId === '' ? 'Enviar': 'Modificar'}*/}
                      <Link to="/granjas"><button type="submit" className="btn-reg2">Cerrar</button></Link>
                   </div>
                   

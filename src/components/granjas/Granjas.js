@@ -2,6 +2,8 @@ import './Granjas.css';
 import perfil from './granjaperfil.jpeg';
 import {db} from '../../firebase';
 import React, {useEffect, useState} from "react";
+import Swal from "sweetalert2";
+import meliminacion from "./meliminacion.jpeg";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,14 +19,41 @@ function Granjas (props) {
 
    //funcion que guarda y envia los datos a firebase, se llama con props en la funcion del componente//
    const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
-    await db.collection('links').doc().set(linkObject)//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
+    await db.collection('links').doc().set(linkObject);//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
+    
    };
 
-   const onDeleteLink = id =>{
-     if (window.confirm("¿Esta seguro de eliminar este registro?")){
-       db.collection('links').doc(id).delete();
-     }
-    
+  const onDeleteLink = id =>{
+    Swal.fire({
+        showCancelButton: true,
+        title: '¿Desea eliminar esta granja?',
+        titleColor: '#fff',
+        confirmButtonColor: '#004296',
+        cancelButtonColor: '#CB262A',
+        confirmButtonText: 'Sí, Eliminelo!',
+        cancelButtonText: 'No, Cancelar!',
+        buttonsStyling: false,
+        showCloseButton: true,
+        background: `url(${meliminacion})`,
+
+        customClass:{
+        popup: 'contentgranjas',
+        title: 'bodygranjas',
+        background: 'contentgranjas',
+        confirmButton: 'btn-m',
+        cancelButton: 'btn-m2',
+      }
+
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire(
+        'Granja Eliminada',
+        '',
+        'success',
+        db.collection('links').doc(id).delete()
+        )
+      }
+    })
   }
 
    const getLinks = async () =>{
@@ -41,7 +70,27 @@ function Granjas (props) {
       getLinks();
    }, []);
 
+  const filter = (value) => {
+   db.collection("links")
+    .where("ciudad", "==", value) //valor del input
+  }
    
+
+  const filtro = (e) =>{
+    filter(e.target.value)
+    
+  }
+
+    //const granjaRef=db.child('links');
+    //const query= links
+                //.orderByChild('granja')
+                //.equalTo('Lolita')
+                //.limitToFirst(1);
+     
+    //const queryDataBase{
+      //db.collection("links").where("granja", "==", "Lolita") 
+    //}
+
 
      return (
       
@@ -52,7 +101,7 @@ function Granjas (props) {
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-3" >
                     <div className="input-group mb-3">
-                      <input type="text" className="form-control" placeholder="¿Que granja estas buscando?"   aria-label="Amount (to the nearest dollar)"/>
+                      <input type="text" className="form-control" placeholder="¿Que granja estas buscando?"   aria-label="Amount (to the nearest dollar)" onChange={filtro}/>
                       <span className="input-group-text"><i className="fas fa-search"></i></span>
                     </div>
                   </div>
@@ -95,6 +144,7 @@ function Granjas (props) {
             </div>
           </div> 
         </div>
+ 
           
       
     );
