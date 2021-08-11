@@ -15,13 +15,22 @@ import {
 function Granjas (props) {
 
   const [links,setlinks] = useState([])
- 
+  const [currentId, setCurrenId] = useState("");
 
    //funcion que guarda y envia los datos a firebase, se llama con props en la funcion del componente//
-   const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
+  /*const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
     await db.collection('links').doc().set(linkObject);//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
-    
-   };
+  };*/
+
+  const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
+    if (currentId===''){
+      await db.collection('links').doc().set(linkObject);//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
+    }
+    else {
+      await db.collection('links').doc(currentId).update(linkObject);
+    }
+    setCurrenId('');
+  };
 
   const onDeleteLink = id =>{
     Swal.fire({
@@ -38,7 +47,6 @@ function Granjas (props) {
 
         customClass:{
         popup: 'contentgranjas',
-        title: 'bodygranjas',
         background: 'contentgranjas',
         confirmButton: 'btn-m',
         cancelButton: 'btn-m2',
@@ -71,8 +79,8 @@ function Granjas (props) {
    }, []);
 
   const filter = (value) => {
-   db.collection("links")
-    .where("ciudad", "==", value) //valor del input
+   db.collection("")
+    .where("granja", "==", value) //valor del input
   }
    
 
@@ -90,6 +98,7 @@ function Granjas (props) {
     //const queryDataBase{
       //db.collection("links").where("granja", "==", "Lolita") 
     //}
+
 
 
      return (

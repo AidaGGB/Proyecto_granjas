@@ -39,7 +39,7 @@ function Registro (props) {
 
   const Letras = str =>{
     return  /^[a-zA-Z ]{2,30}$/.test(str);
-  }
+  }git 
 
   const Direccion = str =>{
     return  /^[A-Za-z0-9\s#-]+$/.test(str);
@@ -133,6 +133,8 @@ function Registro (props) {
                           className="form-control forminput" 
                           id="granja" 
                           placeholder="Nombre de la granja:"
+                          required="required"
+                          pattern=" /^(?!.* (?: |$))[A-Z][a-z ]{1,40}$/"
                           name="granja"
                           onChange={handleInputChange}/* cambio de estado del input trae la funcion*/
                           value={values.granja} /*agrega el value al input para que  refleje el estado inicial despues de ingresar un dato*/                     />
@@ -142,6 +144,8 @@ function Registro (props) {
                           className="form-control forminput" 
                           id="nombrep" 
                           placeholder="Nombre del propietario:"
+                          required="required"
+                          pattern=" /^[a-zA-Z ]{2,30}$/"
                           name="nombrep"
                           onChange={handleInputChange}
                           value={values.nombrep}
@@ -151,7 +155,9 @@ function Registro (props) {
                     <input type="text" 
                           className="form-control forminput" 
                           id="apellidosp" 
-                          placeholder="Apellidos del propietario:" 
+                          placeholder="Apellidos del propietario:"
+                          required="required"
+                          pattern=" /^[a-zA-Z ]{2,30}$/" 
                           name="apellidosp"
                           onChange={handleInputChange}
                           value={values.apellidosp}
@@ -162,6 +168,8 @@ function Registro (props) {
                           className="form-control forminput" 
                           id="ciudad" placeholder="Ciudad:"
                           name="ciudad"
+                          required="required"
+                          pattern=" /^[a-zA-Z ]{2,30}$/"
                           onChange={handleInputChange}
                           value={values.ciudad}
                     />
@@ -172,6 +180,8 @@ function Registro (props) {
                           id="direccion" placeholder="Dirección:"
                           name="direccion"
                           onChange={handleInputChange}
+                          required="required"
+                          pattern="/^[A-Za-z0-9\s#-]+$/"
                           value={values.direccion}
                     />
                   </div>
@@ -181,6 +191,8 @@ function Registro (props) {
                           id="tel" 
                           placeholder="Teléfono:"
                           name="telefono"
+                          required="required"
+                          pattern="/^\d{7,14}$/"
                           onChange={handleInputChange}
                           value={values.telefono}
                     />
@@ -190,6 +202,8 @@ function Registro (props) {
                           className="form-control forminput" 
                           id="celu" placeholder="Número de celular:"
                           name="celular"
+                          required="required"
+                          pattern="/^\d{7,14}$/"
                           onChange={handleInputChange}
                           value={values.celular}
                     />
@@ -199,7 +213,9 @@ function Registro (props) {
                           className="form-control forminput" 
                           id="correo" 
                           placeholder="Correo electrónico:"
+                          required="required"
                           name="correo"
+                          pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
                           onChange={handleInputChange}
                           value={values.correo}
                     />
@@ -207,8 +223,11 @@ function Registro (props) {
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
-                          id="ruta" placeholder="Ruta de recolección:"
+                          id="ruta" 
+                          placeholder="Ruta de recolección:"
                           name="ruta"
+                          required="required"
+                          pattern="/^[a-zA-Z0-9]{1,3}$/"
                           onChange={handleInputChange}
                           value={values.ruta}
                     />

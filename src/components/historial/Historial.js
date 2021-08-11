@@ -16,9 +16,15 @@ function Historial (props) {
   const [links,setlinks] = useState([])
 
   const addOrEditP = async (regobject) => {
-    await db.collection('registro').doc().set(regobject);
-    console.log("new task added")
+    if (currentIdP=== "") {
+     await db.collection('registro').doc().set(regobject);
+     console.log("new task added")
+    }
+    else{
+      await db.collection('registro').doc(currentIdP).update(regobject);
+    }
   };
+
 
   const onDeleteReg = id =>{
     Swal.fire({

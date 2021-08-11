@@ -8,11 +8,22 @@ import { useParams } from 'react-router-dom';
 function Pregistro () {
   
   const [links,setlinks] = useState([])
+  const [currentId, setCurrenId] = useState("");
   const {id} = useParams()
   
   //funcion que guarda y envia los datos a firebase, se llama con props en la funcion del componente//
-  const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
+  /*const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
     await db.collection('links').doc().set(linkObject);//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
+  };*/
+
+  const addOrEditLink= async (linkObject)=>{// async funcion que trae el await para guardar los datos mientras se ejecuta otro codigo//
+    if (currentId===''){
+      await db.collection('links').doc().set(linkObject);//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
+    }
+    else {
+      await db.collection('links').doc(currentId).update(linkObject);
+    }
+    setCurrenId('');
   };
 
   
