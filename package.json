@@ -18,7 +18,11 @@
     "web-vitals": "^1.1.2",
     "yup": "^0.32.9"
   },
+
+  "homepage": "http://AidaGGB.github.io/Proyecto_granjas",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
