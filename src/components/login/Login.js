@@ -21,7 +21,7 @@ function Login () {
       alert("No se ha completado los campos")
     }
     else if (login.usuario===usuarioc && login.contrasena===contrasenac){
-      window.location.replace("/index")
+      window.location.replace('/index')
     }
     else{
       alert("Datos ingresados incorrectos")
