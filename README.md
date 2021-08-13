@@ -106,11 +106,14 @@ Para aprender más de React consulte su documentación oficial en: [React docume
 
 
 Dentro del desarrollo del presente proyecto se evidenciaron varios errores de sintaxis y de lógica por el manejo en Js, los cuáles el usuario debe identificar y corregir segun sea.
+                     
 
 
 
 
 Autores. 
+
+
 Maria Fernanda Garcia Avila.
 Aida Gineth Garzón Bejarano.
 
