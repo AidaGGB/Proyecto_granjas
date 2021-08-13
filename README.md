@@ -18,6 +18,7 @@ Para la ejecucuion de este proyecto debieron ser instaladas varias librerias , a
 - Debido a que React integra Js, HTML, y css, no es necesario instalar  estos complementos 
 
 -Para poder Utilizar react y react-router-dom se debe instalar la libreria que lo contiene, por consola se debe correr el siguiente comando "npm install react-router-dom", después de ser instalado se debe importar en el/los componentes a ser usados.
+
 ![image](https://user-images.githubusercontent.com/84721645/129361071-46db7e43-6420-4ccb-8d63-54c516d66ce9.png)
 
 
