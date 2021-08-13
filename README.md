@@ -3,6 +3,7 @@
 
 **INFORMACION GENERAL**
 
+
 <img src="Sistema regran.png"  width="500px"/>
 
 Este proyecto se creó como requisito académico (Etapa productiva) del programa TechPower de Kuepa
@@ -11,7 +12,9 @@ Es un aplicativo web que permite realizar el regitro de las granjas y la cantida
 
 El proyecto se encuentra terminado, pero como todos los proyectos en programación esta sujeto a modificación y verificación
 
+
 **PROGRAMAS Y COMPLEMENTOS**
+
 
 Este aplicativo web se desarrollo utilizando:
 
@@ -26,7 +29,10 @@ Este aplicativo web se desarrollo utilizando:
         
  diseño responsivo y la implementación de conocimiento relacionado con el manejo de diseño grafico, diseño Front-End y experiencia de usuario.
  
+ 
+ 
  **PRE-REQUISITOS E INSTALACIÓN **
+ 
 
 Para la ejecución de este proyecto debieron ser instaladas varias librerias , a continuación se describe su proceso
 
@@ -86,7 +92,15 @@ Para aprender más de React consulte su documentación oficial en: [React docume
 
 
 
-**Screenflow**
+
+
+**SCREENFLOW**
+
+
+<img src="screenflow.png"  width="600px"/>
+
+
+
 
 
 
