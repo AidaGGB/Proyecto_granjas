@@ -110,7 +110,7 @@ Dentro del desarrollo del presente proyecto se evidenciaron varios errores de si
 
 
 
-Autores 
+Autores. 
 Maria Fernanda Garcia Avila.
 Aida Gineth Garzón Bejarano.
 
