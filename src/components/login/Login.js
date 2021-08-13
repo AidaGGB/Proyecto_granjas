@@ -78,7 +78,7 @@ function Login () {
                       <Link to="">¿Olvidaste tu contraseña?</Link>
                     </div>
                     <div>
-                     <button type="submit"  className="sesion">Iniciar Sesion</button>
+                    <Link to="/index"><button type="submit"  className="sesion">Iniciar Sesion</button></Link>
                     </div>
                 </form>
               </div>
