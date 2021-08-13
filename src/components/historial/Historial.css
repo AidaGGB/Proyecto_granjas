@@ -43,8 +43,6 @@
  outline: none;  
 }
 
-
-
 .form-control4{
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
@@ -66,6 +64,7 @@
 	font-family: 'Poppins', sans-serif;
 	margin-left: 10px;
 }
+
 .filtrar:hover{
 	color: #004296;
 }

@@ -4,39 +4,22 @@ import {db} from '../../firebase';
 import React, {useEffect, useState} from "react";
 import Swal from "sweetalert2";
 import meliminacion from "./meliminacion.jpeg";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 function Granjas (props) {
 
   const [links,setlinks] = useState([])
-  const [currentId, setCurrenId] = useState("");
 
-   //funcion que guarda y envia los datos a firebase, se llama con props en la funcion del componente//
+    //funcion que guarda y envia los datos a firebase, se llama con props en la funcion del componente//
   /*const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
     await db.collection('links').doc().set(linkObject);//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
   };*/
 
-  const addOrEditLink= async (linkObject)=>{// async funcion que trae el awwait para guardar los datos mientras se ejecuta otro codigo//
-    if (currentId===''){
-      await db.collection('links').doc().set(linkObject);//desde la bas de  datos de firebase crea una coleccion de nombre link que se guanda en un documento unico que trae desde link object//
-    }
-    else {
-      await db.collection('links').doc(currentId).update(linkObject);
-    }
-    setCurrenId('');
-  };
-
-  const onDeleteLink = id =>{
+   const onDeleteLink = id =>{
     Swal.fire({
         showCancelButton: true,
-        title: '¿Desea eliminar esta granja?',
-        titleColor: '#fff',
+        title: '<span style="color:#fff">¿Desea eliminar esta granja?</span>',
         confirmButtonColor: '#004296',
         cancelButtonColor: '#CB262A',
         confirmButtonText: 'Sí, Eliminelo!',
@@ -47,6 +30,7 @@ function Granjas (props) {
 
         customClass:{
         popup: 'contentgranjas',
+        title: 'bodygranjas',
         background: 'contentgranjas',
         confirmButton: 'btn-m',
         cancelButton: 'btn-m2',
@@ -78,28 +62,17 @@ function Granjas (props) {
       getLinks();
    }, []);
 
-  const filter = (value) => {
-   db.collection("")
-    .where("granja", "==", value) //valor del input
-  }
-   
-
-  const filtro = (e) =>{
-    filter(e.target.value)
-    
-  }
-
-    //const granjaRef=db.child('links');
-    //const query= links
-                //.orderByChild('granja')
-                //.equalTo('Lolita')
-                //.limitToFirst(1);
-     
-    //const queryDataBase{
-      //db.collection("links").where("granja", "==", "Lolita") 
-    //}
-
-
+  const Buscarg = async (e) =>{ 
+    db.collection ('links').where("granja", "==", e.target.value).onSnapshot((querySnapshot)=>{
+      const docsp = [];
+    querySnapshot.forEach ((doc) =>{
+       console.log(doc.data())
+       console.log(doc.id)
+       docsp.push({...doc.data(), id:doc.id});
+       });
+      setlinks(docsp);
+     });
+ };
 
      return (
       
@@ -110,7 +83,14 @@ function Granjas (props) {
                   </div>
                   <div className="col-sm-12 col-md-12 col-lg-3" >
                     <div className="input-group mb-3">
-                      <input type="text" className="form-control" placeholder="¿Que granja estas buscando?"   aria-label="Amount (to the nearest dollar)" onChange={filtro}/>
+                      <input type="text" 
+                      id="buscarg"
+                      name="buscarg"
+                      className="form-control" 
+                      placeholder="¿Que granja estas buscando?"   
+                      aria-label="Amount (to the nearest dollar)" 
+                      onChange={Buscarg}
+                      />
                       <span className="input-group-text"><i className="fas fa-search"></i></span>
                     </div>
                   </div>
@@ -127,7 +107,7 @@ function Granjas (props) {
                 <div className="col-sm-12 col-md-12 col-lg-4">
                   <div className="card cardgranjas" key={link.id }>
                     <div className="card-body infogranjas">
-                      <img src={perfil}/>
+                      <img src={perfil} alt="" />
                       <h6 className="card-title">{link.granja}</h6>
                       <h7>Datos</h7>
                       <p className="card-text"><span>Propietario:</span> {link.nombrep} {link.apellidosp}</p>
@@ -138,7 +118,7 @@ function Granjas (props) {
                       <p className="card-text"><span>Ruta:</span> {link.ruta}</p>
                       <div className="botoncard">
                         <button className="btn btn-primary" onClick={() => window.location.replace(`/registro/${link.id}`)}><i className="fas fa-pen"></i>   Editar</button>
-                        <a href="#" className="btn btn-eliminar" onClick={() => onDeleteLink (link.id)}><i className="fas fa-trash-alt"></i>   Eliminar</a>
+                        <button className="btn btn-eliminar" onClick={() => onDeleteLink (link.id)}><i className="fas fa-trash-alt"></i>   Eliminar</button>
                       </div>
                     </div>
                   </div>

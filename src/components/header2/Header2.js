@@ -2,14 +2,7 @@ import './Header2.css';
 import logo from './Logo.png';
 import Menu from '../menu/Menu';
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink
-} from "react-router-dom";
-
+import {Link} from "react-router-dom";
 
 function Header2 () {
     return (
@@ -19,7 +12,7 @@ function Header2 () {
         
             <div className="menu col-sm-12 col-md-12 col-lg-8" >
               <Menu/>
-              <img src={logo} className="image-fluid"/>
+              <img src={logo} className="image-fluid" alt="" />
             </div>
 
             <div className="boton col-sm-12 col-md-12 col-lg-4">

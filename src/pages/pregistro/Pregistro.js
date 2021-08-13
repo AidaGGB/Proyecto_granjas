@@ -26,8 +26,6 @@ function Pregistro () {
     setCurrenId('');
   };
 
-  
-
   const getLinks = async () =>{
     db.collection ('links').onSnapshot((querySnapshot)=>{
       const docs = [];
@@ -41,8 +39,6 @@ function Pregistro () {
   useEffect(() =>{
      getLinks();
   }, []);
-
-  
 
     return (
       <div>

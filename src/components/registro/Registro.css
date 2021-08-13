@@ -48,6 +48,7 @@
 .botonreg{
     text-align: center;
 }
+
 .btn-reg{
     background-color: #3bc37b;
 	color: white;
@@ -86,3 +87,24 @@
     border: 2px solid #004296;
     font-weight: bold;
 }
+
+.inputError{
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #000000;
+    display:none; 
+}
+
+.mensajerror{
+    height: 40px;
+    line-height: 35px;
+    background-color: #CB262A;
+    color: white;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 20px;  
+}
+
+

@@ -1,19 +1,10 @@
 import './Registro.css';
 import { db } from '../../firebase';
 import React,{useState, useEffect} from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink
-} from "react-router-dom";
-
-
+import {Link} from "react-router-dom";
 
 
 function Registro (props) {
-  
   //funcion que trae lo valores iniciales //
   const initialStateValues={
     granja:'',
@@ -37,60 +28,11 @@ function Registro (props) {
       setValues({...values, [name]:value})//guarda lo que se esta escribiendo en el estado//
   };
 
-  const Letras = str =>{
-    return  /^[a-zA-Z ]{2,30}$/.test(str);
-  }git 
-
-  const Direccion = str =>{
-    return  /^[A-Za-z0-9\s#-]+$/.test(str);
-  }
-
-  const Numeros = str =>{
-    return  /^\d{7,14}$/.test(str);
-  }
-
-  const Email = str =>{
-    return  /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(str);
-  }
-
-  const Ruta = str =>{
-    return  /^[a-zA-Z0-9]{1,3}$/.test(str);
-  }
-  
 
   // funcion que maneja el evento dentro del formulario//
   const handleSubmit= (e) =>{
     e.preventDefault ();
-    if(!Letras(values.granja)){
-      window.alert("Datos invalidos")
-    }
-    else if (!Letras(values.nombrep)) {
-      window.alert("Datos invalidos")
-    }
-    else if (!Letras(values.apellidosp)) {
-      window.alert("Datos invalidos")
-    }
-    else if (!Letras(values.ciudad)) {
-      window.alert("Datos invalidos")
-    }
-    else if (!Direccion(values.direccion)) {
-      window.alert("Datos invalidos")
-    }
-    else if (!Numeros(values.telefono)) {
-      window.alert("Datos invalidos")
-    }
-    else if (!Numeros(values.celular)) {
-      window.alert("Datos invalidos")
-    }
-    else if (!Email(values.correo)) {
-      window.alert("Datos invalidos")
-    }
-    else if (!Ruta(values.ruta)) {
-      window.alert("Datos invalidos")
-    }
-    else{
-       alert('Información guardada correctamente')
-    }
+   
     props.addOrEditLink(values);//con el props trae la funcion que se ejecuta en el inicios//
     setValues({...initialStateValues})//limpia el formulario, trae los valores iniciales despues de ingresar informacion//
   };
@@ -111,11 +53,6 @@ function Registro (props) {
     }
   }, [props.currentId]);
 
-  //const name= [/AASDRFGHJK]
-   //if (name.test (value.granja)=== false){
-   // window.alert(ingrese un valor valido)
-  //}
-
     return (
       <div>
         <div className="container-fluid overflow-hidden registro">
@@ -134,46 +71,51 @@ function Registro (props) {
                           id="granja" 
                           placeholder="Nombre de la granja:"
                           required="required"
-                          pattern=" /^(?!.* (?: |$))[A-Z][a-z ]{1,40}$/"
                           name="granja"
+                          pattern="^[a-zA-Z ]{2,30}$"
                           onChange={handleInputChange}/* cambio de estado del input trae la funcion*/
-                          value={values.granja} /*agrega el value al input para que  refleje el estado inicial despues de ingresar un dato*/                     />
+                          value={values.granja}/*agrega el value al input para que  refleje el estado inicial despues de ingresar un dato*/                    
+                    />
                   </div>
+
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
                           id="nombrep" 
                           placeholder="Nombre del propietario:"
                           required="required"
-                          pattern=" /^[a-zA-Z ]{2,30}$/"
+                          pattern="^[a-zA-Z ]{2,30}$"
                           name="nombrep"
                           onChange={handleInputChange}
                           value={values.nombrep}
                     />
                   </div>
+
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
                           id="apellidosp" 
                           placeholder="Apellidos del propietario:"
                           required="required"
-                          pattern=" /^[a-zA-Z ]{2,30}$/" 
+                          pattern="^[a-zA-Z ]{2,30}$" 
                           name="apellidosp"
                           onChange={handleInputChange}
                           value={values.apellidosp}
                     />
                   </div>
+
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
                           id="ciudad" placeholder="Ciudad:"
                           name="ciudad"
                           required="required"
-                          pattern=" /^[a-zA-Z ]{2,30}$/"
+                          pattern="^[a-zA-Z ]{2,30}$"
                           onChange={handleInputChange}
                           value={values.ciudad}
                     />
                   </div>
+
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
@@ -181,10 +123,11 @@ function Registro (props) {
                           name="direccion"
                           onChange={handleInputChange}
                           required="required"
-                          pattern="/^[A-Za-z0-9\s#-]+$/"
+                          pattern="^[A-Za-z0-9\s#-]+$"
                           value={values.direccion}
                     />
                   </div>
+
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
@@ -192,22 +135,24 @@ function Registro (props) {
                           placeholder="Teléfono:"
                           name="telefono"
                           required="required"
-                          pattern="/^\d{7,14}$/"
+                          pattern="^\d{7,14}$"
                           onChange={handleInputChange}
                           value={values.telefono}
                     />
                   </div>
+
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
                           id="celu" placeholder="Número de celular:"
                           name="celular"
                           required="required"
-                          pattern="/^\d{7,14}$/"
+                          pattern="^\d{7,14}$"
                           onChange={handleInputChange}
                           value={values.celular}
                     />
                   </div>
+
                   <div className="col-md-6">
                     <input type="email" 
                           className="form-control forminput" 
@@ -215,11 +160,12 @@ function Registro (props) {
                           placeholder="Correo electrónico:"
                           required="required"
                           name="correo"
-                          pattern="/^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                          pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"
                           onChange={handleInputChange}
                           value={values.correo}
                     />
                   </div>
+
                   <div className="col-md-6">
                     <input type="text" 
                           className="form-control forminput" 
@@ -227,7 +173,7 @@ function Registro (props) {
                           placeholder="Ruta de recolección:"
                           name="ruta"
                           required="required"
-                          pattern="/^[a-zA-Z0-9]{1,3}$/"
+                          pattern="^[a-zA-Z0-9]{1,3}$"
                           onChange={handleInputChange}
                           value={values.ruta}
                     />
@@ -249,6 +195,11 @@ function Registro (props) {
                       </label>
                     </div>
                   </div>
+
+                  {false &&  <div className="mensajerror">
+                  <p><b>Error:</b> Por favor diligenciar el formulario correctamente</p>
+                  </div>}
+
                   <div className="botonreg">
                     <button type="submit" 
                           className="btn-reg" 
@@ -257,8 +208,6 @@ function Registro (props) {
                   </div>
                   
                 </form>
-                
-                
               </div>
             </div>
             </div>
@@ -270,3 +219,5 @@ function Registro (props) {
   }
   
   export default Registro;
+
+  

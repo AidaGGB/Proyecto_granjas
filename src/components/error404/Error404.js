@@ -1,12 +1,6 @@
 import './Error404.css';
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 function Error404 () {
@@ -22,13 +16,9 @@ function Error404 () {
                   <h1>PÁGINA NO ENCONTRADA</h1>
                 </div>
               </div>
-                
-                    
             </div>   
         </div>
     </div>
-
-    
 
     );
   }

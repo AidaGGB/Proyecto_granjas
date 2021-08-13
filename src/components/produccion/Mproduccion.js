@@ -1,8 +1,6 @@
 import './Produccion.css';
 import React,{useState, useEffect} from "react";
 import { db } from '../../firebase';
-import { Link } from 'react-router-dom';
-
 
 function Mproduccion (props) {
 
@@ -10,10 +8,11 @@ function Mproduccion (props) {
     fecha:'',
     registro:'',
     idgranja:'',
+    granja:'',
    };
 
   //Funcion que coloca los valores iniciales (use state) en el array
-  const [valuesp, setValuesP]= useState(initialStateValuesP);
+  const [valuesp,setValuesP]=useState(initialStateValuesP);
 
   //funcion que c/vez que se escribe actualiza el estado, maneja el cambio del input//
   const handleInputChangeP= (e) =>{
@@ -32,9 +31,8 @@ function Mproduccion (props) {
     
   };
 
-
   const getLinkByIdP= async (id)=>{
-    const doc= await db. collection('registro').doc(id).get();
+    const doc= await db.collection('registro').doc(id).get();
     console.log(doc.data())
     setValuesP(doc.data())
   }
@@ -47,11 +45,8 @@ function Mproduccion (props) {
     else{
       getLinkByIdP(props.currentIdP)
     }
-  }, [props.currentIdP]);
+  },[props.currentIdP]);
   
-  
-  
-
     return (
       <div className="modal" tabindex={-1} id={props.Mid?.split(' ').join('') || "plactea"} >{/* el id trae el nombrede la granja x 1/2 de un props, ene l id se esta uniendo el nombre de la granja para que quede 1 solo string el siplit toma cada palabra del nombre y lo coloca en e1 array, el join une todod lo del array y lo deja como un string*/}
         <div className="modal-dialog modal-dialog-centered">
@@ -68,9 +63,15 @@ function Mproduccion (props) {
                         id="idgranja"
                         name="idgranja"
                         onChange={handleInputChangeP}
-                        value={valuesp.idgranja=props.pid}
+                        value={valuesp.idgranja=props.pid} 
                   />
-                <label for="fecha" class="col-sm-2 col-form-label">Fecha:</label>
+                  <input type="hidden" 
+                        id="granja"
+                        name="granja"
+                        onChange={handleInputChangeP}
+                        value={valuesp.granja=props.Mid} 
+                  />
+                <label for="fecha" className="col-sm-2 col-form-label">Fecha:</label>
                   <input type="date" 
                         className="form-control2" 
                         id="fecha"

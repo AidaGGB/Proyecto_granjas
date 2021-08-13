@@ -57,7 +57,6 @@
 }
 
 .cardgranjas{
-    
     margin-left: 10px;
     margin-bottom: 10px;
     box-shadow: 1px 1px 3px #5c5749;
@@ -75,14 +74,14 @@
 }
 
 .granjasimg{
-    background-image: url(./granjasimg.png);
+    background-image: url(./granjasimg.jpg);
     background-size: cover;
-    background-position: center center;
+    background-repeat:no-repeat;
    
+    
 }
 
 .infogranjas{
-    
     text-align: center;
 }
 .infogranjas img{
@@ -103,7 +102,6 @@
 span{
     font-weight: bold;
 }
-
 
 .botoncard{
     margin-top: 7px;
@@ -169,7 +167,7 @@ span{
 
 .bodygranjas{
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     margin-top: 30px;
     text-shadow: 2px 2px 5px black;
     font-weight: bold;

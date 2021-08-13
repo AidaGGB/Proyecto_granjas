@@ -1,13 +1,7 @@
 import './Menu.css';
 
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  NavLink
-} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 
 function Menu () {
@@ -16,11 +10,11 @@ function Menu () {
 
                 <div className="dropdown ">
                   <button className="btn btn-secondary" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class='barry'>
-                      <span class='bar'></span>
-                      <span class='bar'></span>
-                      <span class='bar'></span>
-                      <span class='bar'></span>
+                    <div className='barry'>
+                      <span className='bar'></span>
+                      <span className='bar'></span>
+                      <span className='bar'></span>
+                      <span className='bar'></span>
                     </div>
                   </button>
                   

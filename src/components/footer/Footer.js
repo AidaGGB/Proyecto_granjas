@@ -12,15 +12,15 @@ function Footer () {
           <footer className="footer2">
             <div className="row">
               <div className="col-sm-6 col-md-6 col-lg-2">
-                  <img src={logom} className="logom"/>
+                  <img src={logom} className="logom" alt="" />
               </div>
               <div className="sec2 col-sm-6 col-md-6 col-lg-3">
                 <p> &copy;Alqueria S.A Todos los derechos reservados</p>
                 <p>Certifica</p>
                 <div className="certifica">
-                  <img src={calidad}/>
-                  <img src={haccp}/>
-                  <img src={iso} className="iso"/>
+                  <img src={calidad} alt="" />
+                  <img src={haccp} alt=""/>
+                  <img src={iso} className="iso" alt=""/>
                 </div>
               </div>
               <div className="sec3 col-sm-12 col-md-12 col-lg-7">

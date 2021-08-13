@@ -6,9 +6,7 @@ import React, {useEffect, useState} from "react";
 
 function Pproduccion() {
 
-  const [currentIdP, setCurrentIdP] = useState ('');
-     
-  const [links,setlinks] = useState([])
+   const [links,setlinks] = useState([])
   
   const getLinks = async () =>{
      db.collection ('links').onSnapshot((querySnapshot)=>{
@@ -24,22 +22,20 @@ function Pproduccion() {
       getLinks();
    }, []);
 
-
       return (
       <div>
         <Header2 />
         <div className="container-fluid overflow-hidden">
           <div className="row granjas">
-                  <div className=" col-sm-12 col-md-12 col-lg-8" >
-                    <h1>PRODUCCIÓN LÁCTEA</h1>
-                  </div>
-                  <div className="col-sm-12 col-md-12 col-lg-4" >
-                    <div className="input-group mb-3">
-                      <input type="text" className="form-control" placeholder="¿Que granja estas buscando?"   aria-label="Amount (to the nearest dollar)"/>
-                      <span className="input-group-text"><i className="fas fa-search"></i></span>
-                    </div>
-                  </div>
-                  
+              <div className=" col-sm-12 col-md-12 col-lg-8" >
+                  <h1>PRODUCCIÓN LÁCTEA</h1>
+              </div>
+              <div className="col-sm-12 col-md-12 col-lg-4" >
+                <div className="input-group mb-3">
+                  <input type="text" className="form-control" placeholder="¿Que granja estas buscando?"   aria-label="Amount (to the nearest dollar)"/>
+                  <span className="input-group-text"><i className="fas fa-search"></i></span>
+                </div>
+              </div>      
           </div>
 
           <div className="row cajasg">
