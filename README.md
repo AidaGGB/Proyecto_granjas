@@ -1,4 +1,4 @@
-<img src="Sistema regran.png"  width="300px"/>
+<img src="Sistema regran.png"  width="500px"/>
 
 Este proyecto se creó como requisito académico (Etapa productiva) del programa TechPower de Kuepa
 
