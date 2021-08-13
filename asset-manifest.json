@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Proyecto_granjas/static/css/main.e0a36ad8.chunk.css",
-    "main.js": "/Proyecto_granjas/static/js/main.7520db6d.chunk.js",
-    "main.js.map": "/Proyecto_granjas/static/js/main.7520db6d.chunk.js.map",
+    "main.js": "/Proyecto_granjas/static/js/main.debff9e7.chunk.js",
+    "main.js.map": "/Proyecto_granjas/static/js/main.debff9e7.chunk.js.map",
     "runtime-main.js": "/Proyecto_granjas/static/js/runtime-main.e5e3f194.js",
     "runtime-main.js.map": "/Proyecto_granjas/static/js/runtime-main.e5e3f194.js.map",
     "static/js/2.ba4d2cf4.chunk.js": "/Proyecto_granjas/static/js/2.ba4d2cf4.chunk.js",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.e5e3f194.js",
     "static/js/2.ba4d2cf4.chunk.js",
     "static/css/main.e0a36ad8.chunk.css",
-    "static/js/main.7520db6d.chunk.js"
+    "static/js/main.debff9e7.chunk.js"
   ]
 }
