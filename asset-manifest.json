@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Proyecto_granjas/static/css/main.e0a36ad8.chunk.css",
-    "main.js": "/Proyecto_granjas/static/js/main.a6d60290.chunk.js",
-    "main.js.map": "/Proyecto_granjas/static/js/main.a6d60290.chunk.js.map",
+    "main.js": "/Proyecto_granjas/static/js/main.f0c3cd2b.chunk.js",
+    "main.js.map": "/Proyecto_granjas/static/js/main.f0c3cd2b.chunk.js.map",
     "runtime-main.js": "/Proyecto_granjas/static/js/runtime-main.e5e3f194.js",
     "runtime-main.js.map": "/Proyecto_granjas/static/js/runtime-main.e5e3f194.js.map",
-    "static/js/2.b28984ba.chunk.js": "/Proyecto_granjas/static/js/2.b28984ba.chunk.js",
-    "static/js/2.b28984ba.chunk.js.map": "/Proyecto_granjas/static/js/2.b28984ba.chunk.js.map",
+    "static/js/2.1716336a.chunk.js": "/Proyecto_granjas/static/js/2.1716336a.chunk.js",
+    "static/js/2.1716336a.chunk.js.map": "/Proyecto_granjas/static/js/2.1716336a.chunk.js.map",
     "index.html": "/Proyecto_granjas/index.html",
     "static/css/main.e0a36ad8.chunk.css.map": "/Proyecto_granjas/static/css/main.e0a36ad8.chunk.css.map",
-    "static/js/2.b28984ba.chunk.js.LICENSE.txt": "/Proyecto_granjas/static/js/2.b28984ba.chunk.js.LICENSE.txt",
+    "static/js/2.1716336a.chunk.js.LICENSE.txt": "/Proyecto_granjas/static/js/2.1716336a.chunk.js.LICENSE.txt",
     "static/media/Logo.71373ded.png": "/Proyecto_granjas/static/media/Logo.71373ded.png",
     "static/media/Error404.css": "/Proyecto_granjas/static/media/alqueriaerror.203bd990.png",
     "static/media/Granjas.css": "/Proyecto_granjas/static/media/meliminacion.3b11e78d.jpeg",
@@ -25,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.e5e3f194.js",
-    "static/js/2.b28984ba.chunk.js",
+    "static/js/2.1716336a.chunk.js",
     "static/css/main.e0a36ad8.chunk.css",
-    "static/js/main.a6d60290.chunk.js"
+    "static/js/main.f0c3cd2b.chunk.js"
   ]
 }
