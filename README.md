@@ -81,7 +81,7 @@ Para aprender más de React consulte su documentación oficial en: [React docume
 
 ![image](https://user-images.githubusercontent.com/84721645/129363783-a8b29cf8-7f26-43e8-bba1-0846030aedd2.png)
 
-- Luego se debe iniciar el firebase, e incluir la importación del mismo en lo/los compopnentes donde va  a ser usado
+- Luego se debe iniciar el firebase, e incluir la importación del mismo en lo/los componentes donde va  a ser usado
 
 ![image](https://user-images.githubusercontent.com/84721645/129363988-3041752a-7b6b-455a-aa0a-c8445c702152.png)
 
@@ -90,6 +90,9 @@ Para aprender más de React consulte su documentación oficial en: [React docume
 
 **USO**
 
+
+
+https://aidaggb.github.io/Proyecto_granjas/
 
 
 
