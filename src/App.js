@@ -12,13 +12,15 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  HashRouter,
 } from "react-router-dom";
 
 function App() {
   return (
     <div>
       
-     <Router basename={process.env.PUBLIC_URL}>
+     {/*<Router basename={process.env.PUBLIC_URL}>*/}
+     <HashRouter basename='/'>
         <Switch>
             <Route exact path='/'sensitive>
               <Home/>
@@ -56,7 +58,7 @@ function App() {
               <Error/>
             </Route>
         </Switch>
-      </Router>
+      </HashRouter>
     </div>    
   );
 }

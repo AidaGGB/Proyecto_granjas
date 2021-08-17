@@ -1,7 +1,7 @@
 import './Login.css';
 import loginimg from './login.png';
 import React,{useState} from "react";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 
 function Login () {
@@ -14,6 +14,7 @@ function Login () {
     contrasena:"",
   })
   
+  let history = useHistory();
   const handleSubmit= (e) => {
     e.preventDefault ();
     console.log(login)
@@ -21,7 +22,8 @@ function Login () {
       alert("No se ha completado los campos")
     }
     else if (login.usuario===usuarioc && login.contrasena===contrasenac){
-      window.location.replace('/index')
+      //window.location.replace('/index')
+      history.push("/dashboard");
     }
     else{
       alert("Datos ingresados incorrectos")
@@ -75,10 +77,10 @@ function Login () {
                       <input type="checkbox"/>   Recordar mis datos
                     </div>
                     <div>
-                      <Link to="">¿Olvidaste tu contraseña?</Link>
+                      ¿Olvidaste tu contraseña?
                     </div>
                     <div>
-                    <Link to="/index"><button type="submit"  className="sesion">Iniciar Sesion</button></Link>
+                    <button type="submit"  className="sesion">Iniciar Sesion</button>
                     </div>
                 </form>
               </div>
